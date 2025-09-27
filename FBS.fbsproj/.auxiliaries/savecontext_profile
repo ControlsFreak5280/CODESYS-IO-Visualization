@@ -1,0 +1,1365 @@
+CODESYS V3.5 SP21 Patch 2
+<?xml version="1.0" encoding="utf-8"?>
+<Profile>
+  <PlugIns>
+    <Exclude>
+      <PlugIn>001d3aae-3a36-4295-b1af-9bf8faea511d</PlugIn>
+      <Hint>RecipeManagement Object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:34" Version="4.6.0.0" Hint="CODESYS Recipes" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>00a2d14c-1a16-46f6-a68f-903e403182d2</PlugIn>
+      <Hint>Redundancy Object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:35" Version="4.2.0.0" Hint="CODESYS Redundancy" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>016ce8b2-c18d-4f78-aecc-6f3bcf7d8aa5</PlugIn>
+      <Hint>Device Ethercat</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:22" Version="4.9.0.0" Hint="CODESYS EtherCAT" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>01bcdb4a-ca85-4787-a389-8185653db706</PlugIn>
+      <Hint>Visualization editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>02bee02c-bf40-4a9c-ae71-f4e5c92c5d9c</PlugIn>
+      <Hint>Data Sources Symbolic Provider</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>030ab0a3-baa6-45d4-bc50-181dab16cbf4</PlugIn>
+      <Hint>Logging Component</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>03cc6aad-2805-4048-a27e-62553eef1b43</PlugIn>
+      <Hint>Parser for the language version 3.5.21.0</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>05036dbc-6f05-4bd8-ad47-c0c445df6d1c</PlugIn>
+      <Hint>Ladder Object AP Adaptation</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:26" Version="1.2.0.0" Hint="CODESYS Ladder" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>06876139-91d7-4c06-91cc-a27b856619c5</PlugIn>
+      <Hint>Text Document</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>06dcd183-2735-4d47-a612-72b607029714</PlugIn>
+      <Hint>BrowserCommands</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>06f73429-a723-4f3c-9b49-1b8ce52a0486</PlugIn>
+      <Hint>Online Manager</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>07be82cd-3680-4bcb-a957-5e99570843d7</PlugIn>
+      <Hint>RISC codegenerator frontend</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:36" Version="4.0.2.0" Hint="CODESYS RISC Front End" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>07ed2588-0115-47c3-affa-eb61926d9b4e</PlugIn>
+      <Hint>ARM Codegenerator</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:7" Version="4.0.3.0" Hint="CODESYS Code Generator ARM" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>0909fc6d-a6a4-4794-94f3-53cabc9879af</PlugIn>
+      <Hint>EmbeddedRuntimeExtension</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:21" Version="4.1.0.0" Hint="CODESYS Embedded Runtime Extension" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>09ed68dc-9485-42b5-ab15-fbbc829dd516</PlugIn>
+      <Hint>RuntimeDeployTool</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:50" Version="4.17.0.0" Hint="CODESYS Control SL Deploy Tool" />
+        <ControlledExtension Originator="PackageManagement:53" Version="4.9.0.0" Hint="CODESYS Control for Raspberry PI" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>0a44a14a-7bbc-49f5-9aa6-3db5b653c9f2</PlugIn>
+      <Hint>Script Driver Recipe</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:34" Version="4.6.0.0" Hint="CODESYS Recipes" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>0ab632c1-82e0-43ce-b014-230e698d1580</PlugIn>
+      <Hint>Device Categories</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>0d21e0be-b65b-4905-8237-f5d63ecae26f</PlugIn>
+      <Hint>NVL Object</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>0f4ad9d9-84cb-4d5b-b4ba-957657e0764f</PlugIn>
+      <Hint>Cam Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:42" Version="4.18.0.0" Hint="CODESYS SoftMotion" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>0ff7f246-3b78-4a0c-9dc1-94105ddd563b</PlugIn>
+      <Hint>Variable Declaration Object</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>10748bcb-f9a1-4ff1-a534-46e73ccfe984</PlugIn>
+      <Hint>Tabular Declaration Editor</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>107b569d-c9c3-4ee0-a26b-f5b5b72ca878</PlugIn>
+      <Hint>Undo Manager</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>108e8974-276a-4f0c-9865-280e52999083</PlugIn>
+      <Hint>PLCopenXML</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>10f97ace-1db8-473a-9dd2-b664cf48920a</PlugIn>
+      <Hint>Project Language Model Provider</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>1100c1b4-d04d-416c-8ff8-154d6359d211</PlugIn>
+      <Hint>Communication Manager Object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>11111111-3e50-4f89-975f-8391e750b2ad</PlugIn>
+      <Hint>Compiler for the compiler Version 3.5.21.0</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>119fa4a3-8dba-4595-986d-aabba8700524</PlugIn>
+      <Hint>Trace Object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:45" Version="4.2.0.0" Hint="CODESYS Trace" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>1450bfc1-aede-41bd-bd3a-81e2327801f3</PlugIn>
+      <Hint>Compiler for the compiler Version 3.5.15.0</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:17" Version="4.0.0.0" Hint="CODESYS Compiler Versions Archive" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>14ac4314-b990-4cc1-9399-8466e042b396</PlugIn>
+      <Hint>OPC UA Data Model Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>16c29ebf-40a2-4a16-91b5-b15f8c6247ab</PlugIn>
+      <Hint>Script Driver SoftMotion</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:42" Version="4.18.0.0" Hint="CODESYS SoftMotion" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>1748b90a-28c4-471f-b0f2-9446d060a059</PlugIn>
+      <Hint>Device Communication Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>17f9ebf4-7d1c-4948-9113-227c1f470eb0</PlugIn>
+      <Hint>OPC UA Information Model Repository</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>180bf1aa-4c34-4e89-91d3-96da715c0ca9</PlugIn>
+      <Hint>Device Editor J1939</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:37" Version="4.2.0.0" Hint="CODESYS SAE J1939" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>1a4c1944-0e54-4497-8ebf-0a4d4f9d63e7</PlugIn>
+      <Hint>Application Object</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>1b06fe26-53d1-44f4-b578-47373eb3eb1b</PlugIn>
+      <Hint>Trend Recording Objects</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>1c394aaa-ad11-4818-b414-21833080aa69</PlugIn>
+      <Hint>Data Sources OPC UA Provider</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>1c66c9c6-f762-4913-874d-ac8991522f5d</PlugIn>
+      <Hint>CODESYS String Libraries</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:43" Version="4.0.0.0" Hint="CODESYS String Libraries" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>2081d217-b969-40d1-b1bb-3211b3024395</PlugIn>
+      <Hint>Device Modbus TCP Slave</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:30" Version="4.4.0.0" Hint="CODESYS Modbus" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>22801da2-108c-4463-b6e7-410cb5e86957</PlugIn>
+      <Hint>POU Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>231416a4-6c71-4303-af93-1b3a6f731076</PlugIn>
+      <Hint>Application Composer Device Diagnosis</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:1" Version="4.3.2.0" Hint="CODESYS Application Composer" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>2680452f-c443-4208-8893-06b6c5adc55b</PlugIn>
+      <Hint>Project Information Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>26d33842-24f3-4c11-a54f-7238896ee99b</PlugIn>
+      <Hint>Image pool</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:48" Version="4.6.0.0" Hint="CODESYS Visualization Support" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>28dc0613-8ce7-4d1c-a6c9-cf1321e8445e</PlugIn>
+      <Hint>License Provider</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:57" Version="1.2.0.0" Hint="CODESYS License Provider" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>29f34b14-e0a5-4fa5-8737-c8baef201b6a</PlugIn>
+      <Hint>Common Icons</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>2a785a6d-f546-47d1-9107-6bcaa0f232cf</PlugIn>
+      <Hint>Device Object</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>2e2afe5c-2034-4888-8939-1de7eeda0839</PlugIn>
+      <Hint>MessageService</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>2f6a52a3-f00f-4d58-8749-5174233352b4</PlugIn>
+      <Hint>Interface Editor</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>2ffbd975-2032-4737-84ef-adcf377f99ba</PlugIn>
+      <Hint>Online Expression Interpreter</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>30979db2-a205-4067-80b1-c99b1c3dfbf3</PlugIn>
+      <Hint>Script Driver Online</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:39" Version="4.1.0.0" Hint="CODESYS Scripting" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>30a290bb-01c9-43cf-8fd1-8c11177b74e1</PlugIn>
+      <Hint>GVL Object</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>30fbd6bb-13d1-407c-985e-df09dd731941</PlugIn>
+      <Hint>Visualization Styles</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>336b5f67-f2b5-4c11-93df-d8a25bebb2a8</PlugIn>
+      <Hint>External File Object</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>3493e6f7-5c57-4266-a8b0-43862c09332f</PlugIn>
+      <Hint>Property editor</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>37ab439e-8423-4828-9f96-1b59849c249b</PlugIn>
+      <Hint>Project Information Object</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>3a25a2c0-5c79-483b-8c9c-0c7e5a7a075d</PlugIn>
+      <Hint>Target Settings</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>3b45811d-224a-47c8-a748-24fbcb76ffa2</PlugIn>
+      <Hint>Device NetX</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:31" Version="4.0.0.0" Hint="CODESYS NetX" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>3c90b672-65ce-4998-b4d1-9f5ca3acf41e</PlugIn>
+      <Hint>Alarm Configuration Objects</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>40cfcfd4-fbba-4fa4-8b4b-6dec9ed97404</PlugIn>
+      <Hint>Input Assistant</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>413c6883-f43f-4820-a3b2-366307375252</PlugIn>
+      <Hint>Object Manager Utilities</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>4147103a-02e6-44a8-9015-3e929c508d0c</PlugIn>
+      <Hint>Data Sources ApplicationV3 Provider</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>41df01ad-5852-45a9-a472-3c9dba5fc33d</PlugIn>
+      <Hint>TaskConfig Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>42881ef1-23f4-4394-8186-3617db1032ac</PlugIn>
+      <Hint>Device CANBus Local Device</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:5" Version="4.3.0.0" Hint="CODESYS CANopen" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>42dd28c7-a216-41a9-97e5-b68a28cea2eb</PlugIn>
+      <Hint>SFC Implementation Object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:41" Version="4.4.0.0" Hint="CODESYS SFC" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>448dbf96-87b2-41c3-923c-fb01e9c54d0e</PlugIn>
+      <Hint>Unit Conversion Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>45070fed-d4a4-4cf0-a0f7-5f8a9fedde8d</PlugIn>
+      <Hint>Usage Analysis</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>46510e41-f0cb-4551-b8f1-eec725db5f17</PlugIn>
+      <Hint>CSourceCodeObject</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:4" Version="4.0.0.0" Hint="CODESYS C Code Integration" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>466600ac-e31a-4489-8dfb-900a42f2f7b9</PlugIn>
+      <Hint>Usage Analysis UI</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>47aa741c-db49-4ed3-9283-5680eda038fa</PlugIn>
+      <Hint>C28x Codegenerator</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:14" Version="4.0.0.0" Hint="CODESYS Code Generator TIC28x" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>492799c5-e7c6-4318-a79c-c74fcbab5419</PlugIn>
+      <Hint>Message View</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>4d549abe-432f-4f5a-9a63-c999e08184b1</PlugIn>
+      <Hint>x86 Codegenerator</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>4e5bfa8e-d548-4012-b62e-739fbfb4b9e7</PlugIn>
+      <Hint>Language Model Manager Legacy</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>4ef52280-6fbe-4fec-9605-5f5cfd4dc01d</PlugIn>
+      <Hint>Project Localization</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>4ffccb81-ba39-42c0-bf1b-6bb623c824a2</PlugIn>
+      <Hint>SoftMotion</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:42" Version="4.18.0.0" Hint="CODESYS SoftMotion" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>536b18a6-dc9d-4692-b963-ee19f573d984</PlugIn>
+      <Hint>Application Composer CFC Generator</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:1" Version="4.3.2.0" Hint="CODESYS Application Composer" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>554d49de-db05-4357-b471-1c9ec51cdc04</PlugIn>
+      <Hint>Visu Generated Code</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>55555555-c9af-4e02-b35d-bdcf90d7a2cd</PlugIn>
+      <Hint>Script Driver TraceObject</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:45" Version="4.2.0.0" Hint="CODESYS Trace" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>55da38af-e78a-46ae-915b-7686657f6fac</PlugIn>
+      <Hint>CODESYS Frame</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>56184f7c-712c-49ca-b23c-cb85f35e8c54</PlugIn>
+      <Hint>Object Manager</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>56719006-da81-45dd-8edb-c0db99178f38</PlugIn>
+      <Hint>Online Commands</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>568ba54b-4638-4ad1-af1c-dd9209a939fd</PlugIn>
+      <Hint>Static Analysis Manager</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>5769c554-e6ad-41fe-aafc-aa722b1c8e13</PlugIn>
+      <Hint>Symbol Configuration Object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>57c316b6-45ba-46c7-9db0-85a05f1e56dc</PlugIn>
+      <Hint>Installer Integration</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>5c88ca7b-06a0-4c65-bc8e-a2578c17e839</PlugIn>
+      <Hint>Package Management UI</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>5c890cf8-1c05-4325-90b8-3cc3e85e54ca</PlugIn>
+      <Hint>Visual Element Implementation Extensions</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>5d17b187-2367-4813-89af-a30890487b3b</PlugIn>
+      <Hint>SmartCoding Options</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>5d6cb671-a13f-45ee-83af-637912133704</PlugIn>
+      <Hint>Binary Archive</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>5e7a5a99-a87c-4126-84ae-68e2a445b6df</PlugIn>
+      <Hint>Repository Elements Resolver</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>5ed28305-4127-4040-bf0e-84ff3843dd50</PlugIn>
+      <Hint>Task Config Utilities</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>6002281c-10f9-4865-b59a-74e7b20c2d31</PlugIn>
+      <Hint>SafetyGSDMLConverter</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:33" Version="4.7.0.0" Hint="CODESYS PROFINET" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>61ab8bb0-eb6d-4008-bde6-1bc5387e1654</PlugIn>
+      <Hint>RecipeManagement Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:34" Version="4.6.0.0" Hint="CODESYS Recipes" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>62b3bfd6-c170-49c4-bf79-5c0c3cecb0fa</PlugIn>
+      <Hint>IecXchange</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>63cc50c1-aabf-4ca8-9654-b3822c231126</PlugIn>
+      <Hint>XML Archive</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>63d6ec35-36ac-42c6-b7cd-e465aed24c51</PlugIn>
+      <Hint>Environment</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>65ac5a36-099c-4700-b501-e56f13e0b4d3</PlugIn>
+      <Hint>Device PROFINET IO</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:33" Version="4.7.0.0" Hint="CODESYS PROFINET" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>66666666-a688-4cc2-a800-091d38050f5c</PlugIn>
+      <Hint>Compiler for the compiler Version 3.5.20.0</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>66d4547f-203c-4ea2-b3fb-517714dafc38</PlugIn>
+      <Hint>Cam Implementation Object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:42" Version="4.18.0.0" Hint="CODESYS SoftMotion" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>66f42804-6b4f-4457-9bc3-dce709c2fb72</PlugIn>
+      <Hint>Library Manager Object</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>68d80244-7f4d-4c65-a4a9-0566531e6456</PlugIn>
+      <Hint>Redundancy Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:35" Version="4.2.0.0" Hint="CODESYS Redundancy" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>6ae7fc36-6147-4c05-a1cb-a799b5181575</PlugIn>
+      <Hint>Object Commands</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>6b3f49ec-831b-4626-91d0-9cb5673ace27</PlugIn>
+      <Hint>Application Composer Sequence Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:1" Version="4.3.2.0" Hint="CODESYS Application Composer" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>6bce30ee-c8aa-4914-9b19-b00199995f25</PlugIn>
+      <Hint>Unit Conversion Object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>6c08473a-63c9-4952-92a6-ff0692897de9</PlugIn>
+      <Hint>Refactoring</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>6cae542a-3a13-45c2-89d2-b651dc67a651</PlugIn>
+      <Hint>HMI Project Wizard</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>6d7aad57-169a-4942-bce3-5a30d2057aec</PlugIn>
+      <Hint>POU Object</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>6dbce70a-2f05-462d-b3b0-f32644908b14</PlugIn>
+      <Hint>CNC function blocks</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:42" Version="4.18.0.0" Hint="CODESYS SoftMotion" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>707ed618-0713-49e6-a6d6-bbd287feb88e</PlugIn>
+      <Hint>Default Navigators</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>71d51045-6366-4155-a1f5-f0a1a4b6230a</PlugIn>
+      <Hint>Device CIP</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:24" Version="4.7.1.0" Hint="CODESYS EtherNet/IP" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>737c4a55-ca0b-4574-a89d-48e399a502c1</PlugIn>
+      <Hint>Library Dependency Inspection</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:28" Version="1.1.0.0" Hint="CODESYS Library Dependency Inspection" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>77783778-10a2-4249-a5ba-8638e876fae4</PlugIn>
+      <Hint>ARM64 Codegenerator</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:8" Version="4.0.1.0" Hint="CODESYS Code Generator ARM64" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>78ab6a30-7c7e-4ad4-b69b-f59d6d14b6ae</PlugIn>
+      <Hint>CNC Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:42" Version="4.18.0.0" Hint="CODESYS SoftMotion" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>79408841-4f7f-4ef4-913f-63e64d929e3c</PlugIn>
+      <Hint>Transition Object</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>7a7aa487-a028-43fa-8948-f5f7b3607c54</PlugIn>
+      <Hint>DUT Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>7a807e44-1a24-49f1-9799-154dd253ac8e</PlugIn>
+      <Hint>Script Driver DeviceObject</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:39" Version="4.1.0.0" Hint="CODESYS Scripting" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>7ae4ae00-401f-49c5-8d34-62b0186c75bd</PlugIn>
+      <Hint>Target Settings Documentation Export</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:44" Version="4.0.0.0" Hint="CODESYS Target Settings Export" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>7bd23fff-da2b-4eb2-8cc8-4ab28bac72dc</PlugIn>
+      <Hint>Compiler for the compiler Version 3.5.14.0</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:17" Version="4.0.0.0" Hint="CODESYS Compiler Versions Archive" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>7c558755-aa3a-4858-ac38-5126d6d8aecf</PlugIn>
+      <Hint>Compiler Version &lt; 3.5.14.0</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:17" Version="4.0.0.0" Hint="CODESYS Compiler Versions Archive" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>7e343689-9a5f-46aa-bf56-5903c4efec59</PlugIn>
+      <Hint>Device Modbus</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:30" Version="4.4.0.0" Hint="CODESYS Modbus" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>7ee3127e-66bb-46e5-8734-30767c1e2996</PlugIn>
+      <Hint>Language Model Manager Configurators</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>7f2108af-1d6d-46c6-8106-7bd1190bb96a</PlugIn>
+      <Hint>Watchlist View</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>80717d89-16cc-4c0e-b0a2-8960d14e6de7</PlugIn>
+      <Hint>Script Driver SymbolConfigObject</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>814141f2-06e8-4013-ada4-42bacc77e168</PlugIn>
+      <Hint>IEC Symbol Publishing Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>81652516-4967-4f8a-9ff5-36e3150c622d</PlugIn>
+      <Hint>User Management</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>83d9882b-8a00-4124-be6e-a23c9f9db637</PlugIn>
+      <Hint>Logical Exchange GVL Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>87348fe8-dbf9-4144-bcd3-36a3c5d7f007</PlugIn>
+      <Hint>Cortex-M3 Codegenerator</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:10" Version="4.0.1.0" Hint="CODESYS Code Generator Cortex M3" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>88b8f003-7842-43cf-9635-79db56e614df</PlugIn>
+      <Hint>Script Driver LibManObject</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:39" Version="4.1.0.0" Hint="CODESYS Scripting" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>89074c97-0ca3-4469-bf01-5f6ae956ef76</PlugIn>
+      <Hint>Device Profibus Slave</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:32" Version="4.2.0.0" Hint="CODESYS PROFIBUS" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>89d073a8-8201-4162-bf4c-7f5fd57eaeac</PlugIn>
+      <Hint>CFC Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:6" Version="4.4.0.0" Hint="CODESYS CFC" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>8a14b6a9-5b0a-4440-880b-aad1f0aa6478</PlugIn>
+      <Hint>Task Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>8f05b65d-c5e1-4ab8-99d2-df0e9ea43f55</PlugIn>
+      <Hint>Trace Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:45" Version="4.2.0.0" Hint="CODESYS Trace" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>8f33458b-b754-4ae7-b805-7e841c23781a</PlugIn>
+      <Hint>Message Storage</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>8f72f97a-04ba-467b-a8ca-2fe57ef1801e</PlugIn>
+      <Hint>User Management UI</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>90d7f9d2-27c9-4789-8250-6c18262b4a0e</PlugIn>
+      <Hint>Package Management</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>923f87e0-cc1f-4ec9-a759-0bbea15ac87b</PlugIn>
+      <Hint>ST Snippet Provider</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>93afde7f-fae2-4904-813a-c3d252d02699</PlugIn>
+      <Hint>Plc Logic Object</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>93bd5c24-9c27-4c30-9094-513ceadbce69</PlugIn>
+      <Hint>Automation Server Connector (Plugin)</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:2" Version="1.36.0.0" Hint="CODESYS Automation Server Connector" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>953c3763-ac4a-4b48-a6ca-2e22c3a0a992</PlugIn>
+      <Hint>Eds-File Converter</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:20" Version="4.2.0.0" Hint="CODESYS EDS Import" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>973a3934-1ec6-4770-83a4-59677803015a</PlugIn>
+      <Hint>Compiler for the compiler Version 3.5.17.0</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>977d3b32-f34f-4f5b-864c-b843b44550dd</PlugIn>
+      <Hint>White Parse Trees</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>97fdbcee-afa9-427f-853e-0fafecdb478b</PlugIn>
+      <Hint>Text Editor Basics</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>98b642a9-90af-4563-9358-5f007ce19839</PlugIn>
+      <Hint>PowerPC Codegenerator</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:11" Version="4.0.1.0" Hint="CODESYS Code Generator PowerPC" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>990d0709-19a7-44c8-9d41-74692074af99</PlugIn>
+      <Hint>CODESYS Base Libraries</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:3" Version="4.0.0.0" Hint="CODESYS Base Libraries" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>99afa4ab-eefe-427c-b853-2fc30c05a9a2</PlugIn>
+      <Hint>Blackfin Codegenerator</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:9" Version="4.0.0.0" Hint="CODESYS Code Generator Blackfin" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>9d5036b5-8e3a-4a13-b589-1809439cd484</PlugIn>
+      <Hint>CODESYS User Survey</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:46" Version="1.2.0.0" Hint="CODESYS Usage Analysis" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>9dd81046-7cf4-4e6e-ac8a-30f529065c59</PlugIn>
+      <Hint>Storages</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>9e0f51a0-d1da-42cc-ab70-094358dbaa81</PlugIn>
+      <Hint>Language Model Utilities</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>9fcfbd1c-b152-4bd8-8bc2-9773bb566084</PlugIn>
+      <Hint>Script Driver Projects</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:39" Version="4.1.0.0" Hint="CODESYS Scripting" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>a0683e9c-3382-4a78-a1da-e2e456a137b5</PlugIn>
+      <Hint>Security Manager</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>a1322e8f-cb72-4938-ad68-c0dd2cd39b44</PlugIn>
+      <Hint>Application Composer Trend Generator</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:1" Version="4.3.2.0" Hint="CODESYS Application Composer" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>a228b750-9d95-43af-b6a7-828efff4f738</PlugIn>
+      <Hint>Breakpoints</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>a2833297-500f-4941-b712-4b3640f1fc78</PlugIn>
+      <Hint>Data Sources Objects</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>a3404fa3-559f-4fb3-9ed6-36d2a195fc36</PlugIn>
+      <Hint>Simulation</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>a3e8ffd6-e48c-45ed-9844-81d95f71df06</PlugIn>
+      <Hint>Visualization Paint Commands</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>a5bc6914-568b-4aec-88fd-53a95516a79b</PlugIn>
+      <Hint>AutoDeclare</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>a638eb6a-e7e3-4fb1-8496-c0343943ffc2</PlugIn>
+      <Hint>Property object</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>a6fb21c6-efb1-4987-a6bc-f2dc1752c254</PlugIn>
+      <Hint>ST Implementation Object</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>a75ff553-9f1e-4298-b8d7-cdaa03ed0665</PlugIn>
+      <Hint>Device CANbus</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:5" Version="4.3.0.0" Hint="CODESYS CANopen" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>a79f2b35-391c-412c-b803-a1d2e4d5713a</PlugIn>
+      <Hint>File Commands</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>a7be1fca-f1c0-4e20-9d37-c555ef61bd16</PlugIn>
+      <Hint>Interface Object</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>a9ac277e-1e42-4d3a-975a-34ef7a0779ef</PlugIn>
+      <Hint>Script Driver Visualization</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:48" Version="4.6.0.0" Hint="CODESYS Visualization Support" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>ab86dd0d-2a90-4e30-90e9-a2cff706c245</PlugIn>
+      <Hint>Version Compatibility Manager</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>acb93b70-4b96-439a-aa06-4be77dcbde1b</PlugIn>
+      <Hint>Bookmarks</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>acc807af-a410-4644-b6d1-3b800224bcc9</PlugIn>
+      <Hint>CFC Implementation Object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:6" Version="4.4.0.0" Hint="CODESYS CFC" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>adade9d9-4146-42b0-beac-a0279418c3c4</PlugIn>
+      <Hint>Ladder Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:26" Version="1.2.0.0" Hint="CODESYS Ladder" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>ae30b345-aacb-43a4-8fde-4214cc576211</PlugIn>
+      <Hint>Standard Project Wizard</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>ae39e352-e0e1-4e31-b954-8655238db190</PlugIn>
+      <Hint>Print Engine</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>ae3bb56d-5b98-4706-8cb6-5bfeaa00ade0</PlugIn>
+      <Hint>Workspace Editor</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>af94ec5a-fd92-418e-a791-b97b58a72a07</PlugIn>
+      <Hint>Option Storage</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>afcd5446-4914-4fe7-bb78-9bffeb70fd17</PlugIn>
+      <Hint>Visualization object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>afe8900e-f053-4ece-83aa-932a84b004b0</PlugIn>
+      <Hint>Trend Recording Editors</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>b02507b2-5231-4754-a146-78957d99f604</PlugIn>
+      <Hint>Navigator Control</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>b0819851-70c4-40c9-8ad6-fe59ee147822</PlugIn>
+      <Hint>Extension SafetyOnline</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:38" Version="4.0.0.0" Hint="CODESYS Safety Support" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>b0c1f5f5-6e5a-4924-92b7-95b8e0953b29</PlugIn>
+      <Hint>ST Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>b1caf0cb-cc18-4710-b4a3-b54edfc48e52</PlugIn>
+      <Hint>Alarm Configuration Editors</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>b39f2f7b-6e0c-4902-ab14-b2b85a0160db</PlugIn>
+      <Hint>Network List Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:27" Version="4.6.0.0" Hint="CODESYS LD/FBD" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>b4f729fb-467c-4d38-8ceb-709fd262b4de</PlugIn>
+      <Hint>TaskConfig Object</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>b6c7a634-8d5e-42fd-a756-d8105c6751d3</PlugIn>
+      <Hint>MemoryTools</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:29" Version="4.1.0.0" Hint="CODESYS Memory Tools" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>b78ea415-7479-4a4b-bd0f-0d4f7d10cfad</PlugIn>
+      <Hint>Script Driver Application Composer</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:1" Version="4.3.2.0" Hint="CODESYS Application Composer" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>b8464656-5102-4236-a8fb-8f0224072058</PlugIn>
+      <Hint>Device Profibus DP</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:32" Version="4.2.0.0" Hint="CODESYS PROFIBUS" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>b91f459a-c34c-4143-b3f2-4531e51d8c10</PlugIn>
+      <Hint>Common Utilities</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:41" Version="4.4.0.0" Hint="CODESYS SFC" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>baaf1c20-0638-447c-982f-67ffa5be4ab3</PlugIn>
+      <Hint>Action Object</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>bb6c39ec-218e-4ab8-9c28-21da75fec5c5</PlugIn>
+      <Hint>Security Agent</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:40" Version="1.4.0.0" Hint="CODESYS Security Agent" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>bccd8cf0-8cb3-433a-895e-24807f22dd90</PlugIn>
+      <Hint>Ladder Object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:26" Version="1.2.0.0" Hint="CODESYS Ladder" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>bdbe31c7-0bd7-4a9a-a417-f5133e8fcd69</PlugIn>
+      <Hint>Method Editor</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>bf8e6be2-43a8-45a1-8a24-53776e2d3cd4</PlugIn>
+      <Hint>Device Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>bfdf950e-2ee5-46d4-af7d-099fa8addadb</PlugIn>
+      <Hint>TCISupport</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:33" Version="4.7.0.0" Hint="CODESYS PROFINET" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>c0c95d25-7d59-431e-a9f4-2caeb961f812</PlugIn>
+      <Hint>Visualelement Repository</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>c105ac21-b519-4753-9982-b541bcb69c91</PlugIn>
+      <Hint>Store</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>c1b57535-f0b7-419f-9b76-46a4f830b770</PlugIn>
+      <Hint>Method Object</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>c3c0212e-15bd-471d-97f3-2d0141f8fed7</PlugIn>
+      <Hint>GVL Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>c4435224-39cd-45ed-a907-975f634ec402</PlugIn>
+      <Hint>AxisGroup Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:42" Version="4.18.0.0" Hint="CODESYS SoftMotion" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>c448e7c9-9145-496a-9069-0a29509dbedc</PlugIn>
+      <Hint>SafetyESIConverter</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:22" Version="4.9.0.0" Hint="CODESYS EtherCAT" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>c49b0c15-ed1c-4d9b-8432-febb80bbf6cb</PlugIn>
+      <Hint>Device Scan</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>c5b6e3bc-15ac-4a78-8b8b-3bed641b398d</PlugIn>
+      <Hint>VisualizationManagement editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>c65e8ac3-6c2c-49c6-b772-bb31b2b1f2a0</PlugIn>
+      <Hint>Codegenerator for x86-64 architecture</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>c724d1be-7710-4834-946a-761189eacfa1</PlugIn>
+      <Hint>NVL Editor</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>c7880c90-68c0-4cf8-a726-f0ee72b11f86</PlugIn>
+      <Hint>Compiler for the compiler Version 3.5.19.0</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>c8982789-29fe-47c1-89f5-74f7c1656027</PlugIn>
+      <Hint>Script Driver VisualizationObject</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>cb8db54f-00e8-4a7a-8a4d-b78cbeea6143</PlugIn>
+      <Hint>License Manager</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>cb99beb3-41d4-4636-a3dc-745ca6c08bcc</PlugIn>
+      <Hint>Find/Replace</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>cbb032e0-75c3-4bb9-bcde-b6c9ff1d6dd6</PlugIn>
+      <Hint>IEC 61131-3 Text Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>cbeea127-2aa5-4162-85db-e26272030ee9</PlugIn>
+      <Hint>Symbol Configuration Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>cc6a7b21-7322-47f7-9814-21dd48e183bf</PlugIn>
+      <Hint>Project Archive</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>cd9a7ff5-3ec1-45f6-a5b0-a5331abe2d1d</PlugIn>
+      <Hint>Web Browser Integration</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>cfa28293-cc74-40a7-bdfd-dd24c1faf5d9</PlugIn>
+      <Hint>DUT Object</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>d034d0bb-7542-4179-8497-853052bcdb5b</PlugIn>
+      <Hint>Transition Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>d1a72f78-4813-48a1-86d0-91334865f04f</PlugIn>
+      <Hint>Visualization element</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:47" Version="4.8.0.0" Hint="CODESYS Visualization" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>d291c27a-a794-4a0c-9580-d4d3afa4d73d</PlugIn>
+      <Hint>Text lists for multi language support</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:48" Version="4.6.0.0" Hint="CODESYS Visualization Support" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>d329d17a-8ffe-4378-aa2d-1d6f10272c8d</PlugIn>
+      <Hint>Device SoftMotion</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:42" Version="4.18.0.0" Hint="CODESYS SoftMotion" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>d347885e-4634-4134-9fbf-e5c33e6ade12</PlugIn>
+      <Hint>CSourceComponentBuilder</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:4" Version="4.0.0.0" Hint="CODESYS C Code Integration" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>d35e1e67-69fb-49df-84d6-4d5b46453adf</PlugIn>
+      <Hint>Network List Object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:27" Version="4.6.0.0" Hint="CODESYS LD/FBD" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>d4407f2e-9379-4c1b-8884-bba7a5e8185f</PlugIn>
+      <Hint>Engine</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>d55b2d52-0f1c-4eda-a109-ec19a2544978</PlugIn>
+      <Hint>Script Driver System</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:39" Version="4.1.0.0" Hint="CODESYS Scripting" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>d63725c5-bcb3-4bf9-b2d0-f38d4d524085</PlugIn>
+      <Hint>Online Help</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>d84a0da8-80d0-4622-81e7-25b0f0360b42</PlugIn>
+      <Hint>RX Codegenerator</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:12" Version="4.0.0.0" Hint="CODESYS Code Generator RX" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>d932d289-4f0a-4f76-b0e7-6d03f7a7e776</PlugIn>
+      <Hint>ToolBox View</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>d958e5e6-9f53-4236-870f-48cbbc13fd48</PlugIn>
+      <Hint>ComponentModelWin</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>dc937c18-e9f0-434d-85b7-1b8f499e378a</PlugIn>
+      <Hint>Script Engine Plugin</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:39" Version="4.1.0.0" Hint="CODESYS Scripting" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>df9e2e73-f615-4c37-b50d-679ad2a3a433</PlugIn>
+      <Hint>Application Composer Alarm Generator</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:1" Version="4.3.2.0" Hint="CODESYS Application Composer" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>e0ad7f8e-f4cb-4c1e-bbff-7b972fe18551</PlugIn>
+      <Hint>Project Compare</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>e1b7da35-7bdb-41d4-82b5-4e538c1b1c82</PlugIn>
+      <Hint>POU Image</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>e2a16d6c-20e0-44d4-ad31-22ada0a08240</PlugIn>
+      <Hint>Hitachi SH Codegenerator</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:13" Version="4.0.0.0" Hint="CODESYS Code Generator SH" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>e3a5a72b-4afa-472c-85d7-ccbbb0f526ba</PlugIn>
+      <Hint>TriCore Codegenerator</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:15" Version="4.0.1.0" Hint="CODESYS Code Generator TriCore" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>e3e47cdc-6ebd-472f-9090-8041104f15c6</PlugIn>
+      <Hint>Action Editor</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>e92ef582-5a77-43af-85fc-1e6949f69db3</PlugIn>
+      <Hint>Build Commands</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>ecd4c69a-8fa6-43b0-89ba-9225d5d8354c</PlugIn>
+      <Hint>ComponentModel</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>edb57405-2414-4d5a-b9fe-9258ad4eae0a</PlugIn>
+      <Hint>Task Object</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>ede87986-8d34-4baf-8653-2a8d31270889</PlugIn>
+      <Hint>Device Ethernet Adapter</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:23" Version="4.2.0.0" Hint="CODESYS Ethernet Adapter" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>ee08241a-dd43-445a-b0a1-de9f717d92e0</PlugIn>
+      <Hint>Compiler for the compiler Version 3.5.18.0</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>efcd1ed8-8eb7-4d92-851d-45fe1a455b79</PlugIn>
+      <Hint>Application Composer</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:1" Version="4.3.2.0" Hint="CODESYS Application Composer" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>f0b1693d-58ca-4ef3-a79f-d3cb923ff030</PlugIn>
+      <Hint>Language Model Manager</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>f1a2b688-f1ca-4235-8a24-e19aef53f035</PlugIn>
+      <Hint>CoreDump</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:18" Version="4.2.0.0" Hint="CODESYS Core Dump" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>f3f46134-4002-4515-a365-46c6903804cf</PlugIn>
+      <Hint>File-Based Storage</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:56" Version="0.9.0.0" Hint="CODESYS File-Based Storage" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>f4bd064b-5292-453d-8632-c3f5c448cea7</PlugIn>
+      <Hint>Edit Commands</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>f552bd2a-1e8b-4ddd-8a60-95857e325fca</PlugIn>
+      <Hint>Compiler for the compiler Version 3.5.16.0</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:17" Version="4.0.0.0" Hint="CODESYS Compiler Versions Archive" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>f58150b2-413c-44e1-90cb-86d1c262a880</PlugIn>
+      <Hint>OPC UA Symbol Publishing Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>f5d619ba-9237-4535-9e8f-6e5ce61f259b</PlugIn>
+      <Hint>Device Repository</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>f5f9ba65-d338-4467-aec4-8c9529d423c7</PlugIn>
+      <Hint>Library Manager Editor</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>f66a43a7-a732-4ae6-8b97-7c8d1c09a106</PlugIn>
+      <Hint>CODESYS Package Designer</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:55" Version="4.2.0.0" Hint="CODESYS Package Designer" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>f6874726-e52b-43cd-aa84-bd093bfc111a</PlugIn>
+      <Hint>Device IOLink</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:25" Version="4.3.0.0" Hint="CODESYS IO-Link" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>f6db1904-5280-4a3d-aab4-11491bdc71ea</PlugIn>
+      <Hint>Cross Reference View</Hint>
+    </Exact>
+    <Exclude>
+      <PlugIn>f733e945-8541-42ad-a2e7-b95d006ae093</PlugIn>
+      <Hint>AxisGroup Object</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:42" Version="4.18.0.0" Hint="CODESYS SoftMotion" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>f748fa99-96ae-4e3c-bade-2573feea581b</PlugIn>
+      <Hint>Data Sources Editors</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:16" Version="4.6.0.0" Hint="CODESYS Communication" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>f85f6611-f7f6-4447-afff-44805027eec3</PlugIn>
+      <Hint>Device Reader</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:19" Version="4.0.0.0" Hint="CODESYS Device Reader" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>facd0fbb-ab10-4fc8-9057-8f022b0f0a3e</PlugIn>
+      <Hint>SFC Editor</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:41" Version="4.4.0.0" Hint="CODESYS SFC" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exclude>
+      <PlugIn>fee534fc-ad05-457d-818d-014cd259c40f</PlugIn>
+      <Hint>Device Modbus Serial Slave</Hint>
+      <ControlledExtensions>
+        <ControlledExtension Originator="PackageManagement:30" Version="4.4.0.0" Hint="CODESYS Modbus" />
+      </ControlledExtensions>
+    </Exclude>
+    <Exact Version="3.5.21.20">
+      <PlugIn>ff337941-370e-4176-b3d1-c64d224eb166</PlugIn>
+      <Hint>Property View</Hint>
+    </Exact>
+    <Exact Version="3.5.21.20">
+      <PlugIn>ff422f0f-9077-454d-83ac-f08958449d75</PlugIn>
+      <Hint>Default Gateway client</Hint>
+    </Exact>
+  </PlugIns>
+  <Checksum>UPuriQ/CItyPpxWmZzflkA==</Checksum>
+</Profile>
