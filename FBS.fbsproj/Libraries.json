@@ -1,0 +1,331 @@
+{
+  "references": {
+    "CAA": {
+      "$type": "Placeholder",
+      "placeholder": "CAA Types",
+      "defaultResolution": "CAA Types Extern, * (CAA Technical Workgroup)",
+      "allowUnqualifiedAccess": true
+    },
+    "CBML": {
+      "$type": "Placeholder",
+      "placeholder": "CBML",
+      "defaultResolution": "Common Behaviour Model, * (3S - Smart Software Solutions GmbH)",
+      "allowUnqualifiedAccess": true
+    },
+    "CmpApp": {
+      "$type": "Placeholder",
+      "placeholder": "CmpApp",
+      "defaultResolution": "CmpApp, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "CmpErrors": {
+      "$type": "ManagedLibrary",
+      "libraryId": "CmpErrors2 Interfaces, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "CmpIecVarAccess_Implementation": {
+      "$type": "Placeholder",
+      "placeholder": "CmpIecVarAccess Implementation",
+      "defaultResolution": "CmpIecVarAccess Implementation, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "FBF": {
+      "$type": "Placeholder",
+      "placeholder": "CAA FB Factory",
+      "defaultResolution": "CAA FB Factory, * (CAA Technical Workgroup)",
+      "allowUnqualifiedAccess": true
+    },
+    "FPU": {
+      "$type": "Placeholder",
+      "placeholder": "FloatingPointUtils",
+      "defaultResolution": "FloatingPointUtils, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "IBaseLibrary": {
+      "$type": "ManagedLibrary",
+      "libraryId": "Base Interfaces, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "ICollections": {
+      "$type": "ManagedLibrary",
+      "libraryId": "Collections Interfaces, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "IecVarAccess_Interfaces": {
+      "$type": "ManagedLibrary",
+      "libraryId": "IecVarAccess3 Interfaces, 3.5.17.0 (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "NBS": {
+      "$type": "Placeholder",
+      "placeholder": "CAA NetBaseSrv",
+      "defaultResolution": "CAA Net Base Services, * (CAA Technical Workgroup)",
+      "allowUnqualifiedAccess": true
+    },
+    "OSCAT_BASIC": {
+      "$type": "ManagedLibrary",
+      "libraryId": "BASIC, 3.3.5.0 (OSCAT)",
+      "allowUnqualifiedAccess": true
+    },
+    "Standard": {
+      "$type": "Placeholder",
+      "placeholder": "Standard",
+      "defaultResolution": "Standard, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "Stu": {
+      "$type": "Placeholder",
+      "placeholder": "StringUtils",
+      "defaultResolution": "StringUtils, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "SysDir": {
+      "$type": "Placeholder",
+      "placeholder": "SysDir",
+      "defaultResolution": "SysDir, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "SysFile": {
+      "$type": "Placeholder",
+      "placeholder": "SysFile",
+      "defaultResolution": "SysFile, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "SysMem": {
+      "$type": "Placeholder",
+      "placeholder": "SysMem",
+      "defaultResolution": "SysMem, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "SysProcess": {
+      "$type": "Placeholder",
+      "placeholder": "SysProcess",
+      "defaultResolution": "SysProcess, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "SysTimeRtc": {
+      "$type": "Placeholder",
+      "placeholder": "SysTimeRtc",
+      "defaultResolution": "SysTimeRtc, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "SysTypes": {
+      "$type": "ManagedLibrary",
+      "libraryId": "SysTypes2 Interfaces, * (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "VisuSymbols": {
+      "$type": "Placeholder",
+      "placeholder": "VisuSymbols",
+      "defaultResolution": "VisuSymbols, 4.5.0.0 (System)",
+      "allowUnqualifiedAccess": true
+    }
+  },
+  "placeholderOverrides": {
+    "CAA Behaviour Model": "CAA Behaviour Model, 3.5.19.0 (CAA Technical Workgroup)",
+    "CAA Callback": "CAA Callback Extern, 3.5.17.0 (CAA Technical Workgroup)",
+    "CAA FB Factory": "CAA FB Factory, 3.5.19.0 (CAA Technical Workgroup)",
+    "CAA List And Tree": "CAA List And Tree, 3.5.17.0 (CAA Technical Workgroup)",
+    "CAA MemBlockMan": "CAA Memory Block Manager Extern, 3.5.18.0 (CAA Technical Workgroup)",
+    "CAA NetBaseSrv": "CAA Net Base Services, 3.5.20.0 (CAA Technical Workgroup)",
+    "CAA ResMan": "CAA Ressource Manager Extern, 3.5.17.0 (CAA Technical Workgroup)",
+    "CAA SegBufMan": "CAA Segmented Buffer Manager Extern, 3.5.17.0 (CAA Technical Workgroup)",
+    "CAA Storage": "CAA Storage, 3.5.21.0 (CAA Technical Workgroup)",
+    "CAA Storage Imp": "3S Storage, 3.5.17.0 (3S - Smart Software Solutions GmbH)",
+    "CAA Tick": "CAA Tick Extern, 3.5.17.0 (CAA Technical Workgroup)",
+    "CAA TickUtil": "CAA TickUtil Extern, 3.5.17.0 (CAA Technical Workgroup)",
+    "CAA Types": "CAA Types Extern, 3.5.17.0 (CAA Technical Workgroup)",
+    "CmpApp": "CmpApp, 3.5.21.0 (System)",
+    "CmpAsyncMgr": "CmpAsyncMgr, 3.5.21.0 (System)",
+    "CmpBinTagUtilIec": "CmpBinTagUtilIec, 3.5.17.0 (System)",
+    "CmpBitmapPool": "CmpBitmapPool, 3.5.17.0 (System)",
+    "CmpCodeMeter": "CmpCodeMeter, 3.5.18.0 (System)",
+    "CmpCrypto Implementation": "CmpCrypto Implementation, 3.5.18.0 (System)",
+    "CmpDynamicText": "CmpDynamicText, 3.5.20.0 (System)",
+    "CmpEventMgr": "CmpEventMgr, 3.5.17.0 (System)",
+    "CmpEventMgr Implementation": "NotImplementedByDevice, 3.5.17.0 (System)",
+    "CmpIecTask": "CmpIecTask, 3.5.21.0 (System)",
+    "CmpIecVarAccess Implementation": "CmpIecVarAccess Implementation, 3.5.17.0 (System)",
+    "CmpLog": "CmpLog, 3.5.21.0 (System)",
+    "CmpSchedule": "CmpSchedule, 3.5.17.0 (System)",
+    "CmpSettings": "CmpSettings, 3.5.9.0 (System)",
+    "CmpSrv": "CmpSrv, 3.5.17.0 (System)",
+    "CmpTargetVisu": "CmpTargetVisu, 3.5.17.0 (System)",
+    "CmpTraceMgr": "CmpTraceMgr, 3.5.17.0 (System)",
+    "CmpUserMgr Implementation": "CmpUserMgr Implementation, 3.5.21.0 (System)",
+    "CmpVisuHandler": "CmpVisuHandler, 3.5.19.0 (System)",
+    "CmpWebServer Implementation": "NotImplementedByDevice, 3.5.17.0 (System)",
+    "Collections": "Collections, 3.5.17.0 (System)",
+    "Component Manager": "Component Manager, 3.5.21.0 (System)",
+    "FloatingPointUtils": "FloatingPointUtils, 3.5.21.0 (System)",
+    "MemoryBlockManager": "Memory Block Manager, 3.5.21.0 (CODESYS)",
+    "Rts Service Handler": "Rts Service Handler, 3.5.17.0 (3S - Smart Software Solutions GmbH)",
+    "Standard": "Standard, 3.5.18.0 (System)",
+    "Standard64": "Standard64, 3.5.20.0 (System)",
+    "StringUtils": "StringUtils, 3.5.20.0 (System)",
+    "SysCpuHandling": "SysCpuHandling, 3.5.17.0 (System)",
+    "SysDir": "SysDir, 3.5.17.0 (System)",
+    "SysFile": "SysFile, 3.5.17.0 (System)",
+    "SysMem": "SysMem, 3.5.17.0 (System)",
+    "SysProcess": "SysProcess, 3.5.17.0 (System)",
+    "SysProcess Implementation": "NotImplementedByDevice, 3.5.17.0 (System)",
+    "SysSem": "SysSem, 3.5.17.0 (System)",
+    "SysSem Implementation": "NotImplementedByDevice, 3.5.17.0 (System)",
+    "SysShm": "SysShm, 3.5.17.0 (System)",
+    "SysShm Implementation": "NotImplementedByDevice, 3.5.17.0 (System)",
+    "SysSocket": "SysSocket, 3.5.19.0 (System)",
+    "SysSocket Implementation": "SysSocket Implementation, 3.5.19.0 (System)",
+    "SysTarget": "SysTarget, 3.5.17.0 (System)",
+    "SysTask": "SysTask, 3.5.17.0 (System)",
+    "SysTime": "SysTime, 3.5.17.0 (System)",
+    "SysTimeCore": "SysTimeCore, 3.5.17.0 (System)",
+    "SysTimeRtc": "SysTimeRtc, 3.5.20.0 (System)",
+    "TCP": "TCP, 3.5.21.0 (CODESYS)",
+    "UDP": "UDP, 3.5.21.0 (CODESYS)",
+    "Util": "Util, 3.5.21.0 (System)",
+    "VisuSymbols": "VisuSymbols, 4.5.0.0 (System)"
+  },
+  "v3Meta": {
+    "objectName": null,
+    "objectGuid": "787c8dd9-0e3a-4b68-934c-73cecef20086",
+    "objectTypeGuid": "adb5cb65-8e1d-4a00-b70a-375ea27582f3",
+    "embeddedObjectTypeGuids": [],
+    "properties": {
+      "_3S.CoDeSys.BaseLibraries.BaseLibrariesProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{61a44170-da69-49a8-99a4-c61280b4559c}\" Method=\"IArchivable\"><Dictionary2 Name=\"PlaceholderResolution\"><Entry><Key><Single Type=\"string\">CBML</Single></Key><Value><Single Type=\"string\">Common Behaviour Model, 4.0.0.0 (CODESYS)</Single></Value></Entry><Entry><Key><Single Type=\"string\">ElementCollections</Single></Key><Value><Single Type=\"string\">Element Collections, 4.0.0.0 (CODESYS)</Single></Value></Entry></Dictionary2></Single>"
+    },
+    "subObjects": {}
+  },
+  "libraryParameters": {},
+  "v3SystemLibraries": [
+    {
+      "namespace": "VisuElem3DPath",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElem3DPath",
+        "defaultResolution": "VisuElem3DPath, 4.7.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemCamDisplayer",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemCamDisplayer",
+        "defaultResolution": "VisuElemCamDisplayer, 4.7.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemMeter",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemMeter",
+        "defaultResolution": "VisuElemMeter, 4.7.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElems",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElems",
+        "defaultResolution": "VisuElems, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemsAlarm",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemsAlarm",
+        "defaultResolution": "VisuElemsAlarm, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemsDateTime",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemsDateTime",
+        "defaultResolution": "VisuElemsDateTime, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemsSpecialControls",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemsSpecialControls",
+        "defaultResolution": "VisuElemsSpecialControls, 4.7.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemsWinControls",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemsWinControls",
+        "defaultResolution": "VisuElemsWinControls, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemTextEditor",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemTextEditor",
+        "defaultResolution": "VisuElemTextEditor, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemTrace",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemTrace",
+        "defaultResolution": "VisuElemTrace, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemXYChart",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemXYChart",
+        "defaultResolution": "VisuElemXYChart, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuInputs",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuInputs",
+        "defaultResolution": "VisuInputs, 4.7.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuNativeControl",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuNativeControl",
+        "defaultResolution": "VisuNativeControl, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    }
+  ]
+}

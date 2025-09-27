@@ -1,0 +1,17 @@
+__V3_META__
+{
+  "objectName": "5ce3da45-db07-42e7-a21c-a00fff4ed8f6|S:\\Projects\\DW\\NTP\\SCADA\\Images\\AlarmLevel2_1.png",
+  "objectGuid": "f59f424e-d2ad-4b62-a26f-b5aab38c0f3b",
+  "objectTypeGuid": "9001d745-b9c5-4d77-90b7-b29c3f77a23b",
+  "embeddedObjectTypeGuids": [],
+  "properties": {},
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{9001d745-b9c5-4d77-90b7-b29c3f77a23b}" Method="IArchivable">
+  <Single Name="AutoUpdateMode" Type="string">Prompt</Single>
+  <Array Name="Data" Type="byte">iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAWZJREFUSA211jFuwjAUBuBfChIRQurQIlVMbNyAhZWJM3SAoVtPwBXYOyIO0Z0TMLIxMHVlQKhSBrvvIT3FCY6TB46lyLGUl9+f7SAAfetQyZe+TF+xSBJkVPauL21e0en38TubIev18N28TP/kYjLB5XyGpcALlbeiuml2O1hrYVcr/LWlumk4hK+2VAWNhLWhKmgkKLbKq5GwmCqvRoJiqYIaCYuhCmok6FnVnWY8hqGP1PI1HMJIEPfPqAqa7RZmvc5fPp/DTKf5+FHVncadPd8fDjD0M2SOxzzsEVVBUw7hMQvLy6dV1Wo4iPdrucw1MhmNqlbDIe7+SAj3TVVBDe8Lnzj3ULghct9EVanxbb68uNzXqYIaPs6+PSmHyDikqtRwMQfJx+r2VctYpQpqZJba3qcKarQB8ryrSmgZWPOz2eB1NKJRxJamwPUKs9/jhf8MfnS7eDudAPrao7fBAGmW4fMfZt/V0lo1Xd4AAAAASUVORK5CYII=</Array>
+  <Single Name="LastModification" Type="System.DateTime">08/20/2019 06:02:14</Single>
+  <Single Name="Frozen" Type="bool">True</Single>
+</Single>
