@@ -7,6 +7,7 @@ Developed by: Russ Ropken, [RSI Company](https://www.rsicompany.com)
 Built with CODESYS IDE x64 v3.5.21.20
 
 Required External Libraries:
+
   OSCAT BASIC v3.3.5: [CODESYS Store](https://us.store.codesys.com/oscat-basic.html)
   
   CODESYS Control for Raspberry Pi v4.17.0: [CODESYS Store](https://us.store.codesys.com/codesys-control-for-raspberry-pi-sl.html)
