@@ -1,9 +1,14 @@
 # CODESYS-IO-Visualization
 CODESYS OOP for IO and Visualization during site commissioning.
 
-Developed by: Russ Ropken, [RSI Company](https://www.rsicompany.com)
-              russ@rsicompany.com
+# Developed By
+Russ Ropken
 
+[RSI Company](https://www.rsicompany.com)
+
+russ@rsicompany.com
+
+# Requirements
 Built with CODESYS IDE x64 v3.5.21.20
 
 Required External Libraries:
