@@ -1,1 +1,12 @@
+# ignore build files and folders
+.auxiliaries/
+.sidecars/
+*.bootinfo
+*.bootinfo_guids
+*.compileinfo
+*.precompilecache
 
+# ignore bakcup files, archives and opt files
+*.backup
+*.projectarchive
+*.opt
