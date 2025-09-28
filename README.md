@@ -19,4 +19,6 @@ Required External Libraries:
   
   Opto 22 Devices v3.1.2: [Opto 22](https://opto22.com/support/resources-tools/downloads/opto-22-library-package-for-codesys-development-sy)
 
-
+# Files
+Project File:  CODESYS-IO-Visualization.project
+File-Based Storage: CODESYS-IO-Visualization.fbsproj
