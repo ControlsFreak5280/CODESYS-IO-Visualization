@@ -10,3 +10,4 @@
 *.backup
 *.projectarchive
 *.opt
+*.~*

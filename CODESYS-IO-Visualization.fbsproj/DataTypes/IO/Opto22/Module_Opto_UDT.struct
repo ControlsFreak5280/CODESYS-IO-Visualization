@@ -1,0 +1,29 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "2f171329-6ce2-4477-86f6-c165a78c8ec6",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE Module_Opto_UDT EXTENDS Module_UDT :
+STRUCT
+	// Opto 22 specific items
+	IsRIO: BOOL := FALSE;															// This is a RIO - turn off for local EPIC Card
+	Module_IO: POINTER TO OPTO.IoDrvOptoIoBase;										// Pointer to local card object
+	RIO_IO: POINTER TO OPTO.IoDrvOptoIoUnit;										// Pointer to RIO object
+	Deactivated: BOOL;																// Deactivated - from hardware
+	DiagString: STRING(160);														// Diagnostic String - from hardware
+	ModuleConfigFailed: BOOL;														// Module Config Failed - from hardware
+	ModuleConfigFound: BOOL;														// Module Config Foune - from hardware
+	ModuleMissing: BOOL;															// Module Missing - from hardware
+	ModuleTypeId: DWORD;															// Module Type Id - from hardware
+	NumberOfChannels: UDINT;														// Number of Channels - from hardware
+	Simulator: Module_Opto_Simulator_UDT;											// Used for data simulation
+END_STRUCT
+END_TYPE

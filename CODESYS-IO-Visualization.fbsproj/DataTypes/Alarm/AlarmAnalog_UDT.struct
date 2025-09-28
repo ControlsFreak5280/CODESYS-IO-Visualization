@@ -1,0 +1,21 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "a874c307-d8e2-48bf-81e3-7c38744415e1",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE AlarmAnalog_UDT EXTENDS AlarmBase_UDT :
+STRUCT
+	Rising: BOOL;					//Input: High alarm when True, Low alarm when False
+	Value: REAL;					//Input: Input Value to evaluate
+	Setpoint: REAL;					//Input: The alarm setpoint
+	Deadband: REAL;					//Input: The alarm Deadband
+END_STRUCT
+END_TYPE

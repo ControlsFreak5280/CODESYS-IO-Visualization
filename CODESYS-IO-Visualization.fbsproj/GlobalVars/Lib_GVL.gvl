@@ -1,0 +1,43 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "7c75b1ed-6cc9-41ed-b353-8d775a3681cd",
+    "objectTypeGuid": "ffbfa93a-b94d-45fc-a329-229860183b1d",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+{attribute 'qualified_only'}
+VAR_GLOBAL CONSTANT
+	MaxModuleCount: INT := 15;
+	MaxPointCount: INT := 31;
+	PI: REAL := 3.141592653589793;						// Pi
+	GallonsPerFT3: REAL := 7.48052;						// Gallons per cubic foot
+END_VAR
+
+VAR_GLOBAL
+	SetClock: BOOL;
+	SetClockValue: DWORD;
+
+	ClockLocal: PLCClock_UDT;							// The PLC Clock in Local Time
+	ClockUTC: PLCClock_UDT;								// The PLC Clock in UTC Time
+END_VAR
+
+VAR_GLOBAL CONSTANT
+	Alarm_Level1_Max: INT := 1000;
+	Alarm_Level1_Min: INT := 600;
+	Alarm_Level2_Max: INT := 599;
+	Alarm_Level2_Min: INT := 500;
+	Alarm_Level3_Max: INT := 499;
+	Alarm_Level3_Min: INT := 400;
+	Alarm_Level4_Max: INT := 399;
+	Alarm_Level4_Min: INT := 300;
+	Alarm_Level5_Max: INT := 299;
+	Alarm_Level5_Min: INT := 200;
+	Alarm_Level6_Max: INT := 199;
+	Alarm_Level6_Min: INT := 0;
+END_VAR

@@ -1,0 +1,39 @@
+__V3_META__
+{
+  "objectGuid": "998a9bec-6ae0-4d5b-ab12-787468046c9e",
+  "objectTypeGuid": "2bef0454-1bd3-412a-ac2c-af0f31dbc40f",
+  "embeddedObjectTypeGuids": [],
+  "properties": {},
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{2bef0454-1bd3-412a-ac2c-af0f31dbc40f}" Method="IArchivable">
+  <Single Name="UniqueIdGenerator" Type="string">0</Single>
+  <List Name="TextList" Type="System.Collections.ArrayList">
+    <Single Type="{53da1be7-ad25-47c3-b0e8-e26286dad2e0}" Method="IArchivable">
+      <Single Name="TextID" Type="string">0</Single>
+      <Single Name="TextDefault" Type="string">Fail Value</Single>
+      <List Name="LanguageTexts" Type="System.Collections.ArrayList" />
+    </Single>
+    <Single Type="{53da1be7-ad25-47c3-b0e8-e26286dad2e0}" Method="IArchivable">
+      <Single Name="TextID" Type="string">1</Single>
+      <Single Name="TextDefault" Type="string">Hold</Single>
+      <List Name="LanguageTexts" Type="System.Collections.ArrayList" />
+    </Single>
+    <Single Type="{53da1be7-ad25-47c3-b0e8-e26286dad2e0}" Method="IArchivable">
+      <Single Name="TextID" Type="string">2</Single>
+      <Single Name="TextDefault" Type="string">Raw Value</Single>
+      <List Name="LanguageTexts" Type="System.Collections.ArrayList" />
+    </Single>
+    <Single Type="{53da1be7-ad25-47c3-b0e8-e26286dad2e0}" Method="IArchivable">
+      <Single Name="TextID" Type="string"></Single>
+      <Single Name="TextDefault" Type="string"></Single>
+      <List Name="LanguageTexts" Type="System.Collections.ArrayList" />
+    </Single>
+  </List>
+  <List Name="Languages" Type="System.Collections.ArrayList" />
+  <Single Name="GuidInit" Type="System.Guid">a4e246bb-5efb-4f8c-b50d-affea9c9a819</Single>
+  <Single Name="GuidReInit" Type="System.Guid">489253b4-ba1e-4d7a-b298-134f387fee50</Single>
+  <Single Name="GuidExitX" Type="System.Guid">cc2b2b86-7d50-4adc-82cc-ea0f46eac90d</Single>
+</Single>

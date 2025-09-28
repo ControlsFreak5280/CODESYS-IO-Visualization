@@ -1,0 +1,29 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "3ff52d0b-796d-407a-94ac-37acdaa835f4",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE DataGroup_UDT :
+STRUCT
+	BOOL0: ARRAY[0..127] OF BOOL;
+	BOOL1: ARRAY[0..127] OF BOOL;
+	BOOL2: ARRAY[0..127] OF BOOL;
+	BOOL3: ARRAY[0..127] OF BOOL;
+	BOOL4: ARRAY[0..127] OF BOOL;
+	BOOL5: ARRAY[0..127] OF BOOL;
+	DINT0: ARRAY[0..49] OF DINT;
+	REAL0: ARRAY[0..49] OF REAL;
+	SWITCH0: ARRAY[0..99] OF INT;
+	WORD0: ARRAY[0..99] OF WORD;
+	STRING0: ARRAY[0..4] OF WSTRING(256);
+	Reset: BOOL;
+END_STRUCT
+END_TYPE

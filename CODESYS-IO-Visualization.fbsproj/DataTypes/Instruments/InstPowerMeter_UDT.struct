@@ -1,0 +1,49 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "f82b153e-552e-4aaf-b1ac-2b6c52678be9",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE InstPowerMeter_UDT EXTENDS InstA_UDT :
+STRUCT
+	Vab: InstA_UDT;
+	Vbc: InstA_UDT;
+	Vca: InstA_UDT;
+	Vll: InstA_UDT;
+	Van: InstA_UDT;
+	Vbn: InstA_UDT;
+	Vcn: InstA_UDT;
+	Vln: InstA_UDT;
+	Ia: InstA_UDT;
+	Ib: InstA_UDT;
+	Ic: InstA_UDT;
+	kWa: InstA_UDT;
+	kWb: InstA_UDT;
+	kWc: InstA_UDT;
+	kW: InstA_UDT;
+	kVAa: InstA_UDT;
+	kVAb: InstA_UDT;
+	kVAc: InstA_UDT;
+	kVA: InstA_UDT;
+	kVARa: InstA_UDT;
+	kVARb: InstA_UDT;
+	kVARc: InstA_UDT;
+	kVAR: InstA_UDT;
+	PFa: InstA_UDT;
+	PFb: InstA_UDT;
+	PFc: InstA_UDT;
+	
+	SysTime: STRING(80);
+
+	SlaveError: BOOL;
+	SlaveState: INT;
+	SlaveErrorCode: INT;
+END_STRUCT
+END_TYPE

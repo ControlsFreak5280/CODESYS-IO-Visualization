@@ -1,0 +1,46 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "904db193-2efd-46bd-b252-4f5a49897032",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE ValveSimulator_UDT :
+STRUCT
+	ibAuto: BOOL;
+	ibFault: BOOL;
+	ibAlarm: BOOL;
+	irPosCmd: REAL;
+	ibOpenCmd: BOOL;
+	ibCloseCmd: BOOL;
+	ibResetCmd: BOOL;
+	irNoisePct: REAL := 0.0;
+	ibDisableCommands: BOOL;
+	irChangeRate: REAL := 10.0;
+	irClosedPct: REAL := 1.0;
+	irOpenedPct: REAL := 99.0;
+	ibUsePosCmd: BOOL;
+	irCoastTime: REAL := 0.25;
+
+	orPosition: REAL;
+	obOpened: BOOL;
+	obClosed: BOOL;
+	obRemote: BOOL;
+	obFailed: BOOL;
+	obAlarm: BOOL;
+	orFaultCode: REAL;
+	
+	CoastTimer: TON;
+	ChangeRamp: OSCAT_BASIC.SRAMP;
+
+	PosCmd: REAL;
+	RandomNumber: REAL;
+	Noise: REAL;
+END_STRUCT
+END_TYPE

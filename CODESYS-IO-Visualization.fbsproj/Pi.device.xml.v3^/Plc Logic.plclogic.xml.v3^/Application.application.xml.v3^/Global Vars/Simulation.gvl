@@ -1,0 +1,17 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "ec291a2f-73c8-4e27-9fad-80e0a06059fa",
+    "objectTypeGuid": "ffbfa93a-b94d-45fc-a329-229860183b1d",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+{attribute 'qualified_only'}
+VAR_GLOBAL
+	SimulationEnable: BOOL;
+END_VAR

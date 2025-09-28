@@ -1,0 +1,48 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "9076addb-61a3-4141-a920-2383669fb5dd",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE CodeSysCPU_UDT EXTENDS dutPersistObject :
+STRUCT
+	Init: BOOL := TRUE;
+	Name: WSTRING(80);
+	Description: WSTRING(256);
+	IPAddress_A: WSTRING(80);
+	IPAddress_B: WSTRING(80);
+	CPUType: WSTRING(80);
+	SlotCount: INT := 5;
+	MemFree: DINT;
+	MemTotal: DINT;
+	MemUsed: DINT;
+	MemFree_MB: REAL;
+	MemTotal_MB: REAL;
+	MemUsed_MB: REAL;
+	CpuUsage: REAL;
+	Temperature: REAL;
+	
+	App: POINTER TO Application;
+	AppInfo: POINTER TO Application_Info;
+	AppResult: RTS_IEC_Result;
+	AppInfoResult: RTS_IEC_Result;
+
+	AppProjectName: WSTRING(255);
+	AppAuthor: WSTRING(255);
+	AppVersion: WSTRING(255);
+	AppDescription: WSTRING(255);
+	AppProfile: WSTRING(255);
+	AppLastChange: DateTimeStampWithString_UDT;
+	
+	LoadResult: RTS_IEC_RESULT;
+	CT: CycleTime_UDT;						//Internal: Used to calculate the elapsed time
+	SampleSeconds: REAL;					//Internal: Seconds since last execution
+END_STRUCT
+END_TYPE

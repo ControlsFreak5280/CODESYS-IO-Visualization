@@ -1,0 +1,38 @@
+__V3_META__
+{
+  "objectGuid": "4ce97f06-2b3e-4644-8b94-7c301227cf4b",
+  "objectTypeGuid": "639b491f-5557-464c-af91-1471bac9f549",
+  "embeddedObjectTypeGuids": [],
+  "properties": {
+    "_3S.CoDeSys.LanguageModelManager.BuildProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{24568a24-c491-472c-a21f-ee5d33859fab}\" Method=\"IArchivable\"><Single Name=\"MemoryReserveForOnlineChange\" Type=\"int\">0</Single><Single Name=\"ExcludeFromBuild\" Type=\"bool\">False</Single><Single Name=\"External\" Type=\"bool\">False</Single><Single Name=\"EnableSystemCall\" Type=\"bool\">False</Single><Single Name=\"CompilerDefines\" Type=\"string\">GENERATE_OVERLAY_VISU,VISU_USEPROPERTYINFO</Single><Single Name=\"LinkAlways\" Type=\"bool\">False</Single><Array Name=\"Undefines\" Type=\"string\" /></Single>"
+  },
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{639b491f-5557-464c-af91-1471bac9f549}" Method="IArchivable">
+  <Single Name="DynamicMemory" Type="int">-1</Single>
+  <Single Name="DownloadContent" Type="bool">True</Single>
+  <Single Name="StopParentAppsOnException" Type="bool">False</Single>
+  <Single Name="GuidNetVarGVL" Type="System.Guid">fae3e553-6d1a-470f-8404-a0d828a63c99</Single>
+  <Single Name="GuidMemSettings" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+  <Single Name="BootAppSettings" Type="{2c29ea75-7cea-4f41-bab2-3128068c5387}" Method="IArchivable">
+    <Single Name="CreateAtDownload" Type="bool">True</Single>
+    <Single Name="CreateAtOnlineChange" Type="bool">True</Single>
+    <Single Name="EnableSystemCall" Type="bool">False</Single>
+    <Single Name="VerifyAfterCreation" Type="bool">False</Single>
+  </Single>
+  <Single Name="OverrideTargetMemorySizes" Type="bool">False</Single>
+  <Single Name="TargetInputSize" Type="int">4096</Single>
+  <Single Name="TargetOutputSize" Type="int">4096</Single>
+  <Single Name="TargetMemoryize" Type="int">4096</Single>
+  <Single Name="StaticSize" Type="int">0</Single>
+  <Single Name="AllowUserDefinedStaticSize" Type="bool">False</Single>
+  <Single Name="X509CommonName" Type="string"></Single>
+  <Single Name="X509EncryptionThumbprint" Type="string"></Single>
+  <Null Name="X509EncryptionThumbprints" />
+  <Single Name="SignDownloadWithX509Certificate" Type="bool">False</Single>
+  <Single Name="FirmCode" Type="uint">0</Single>
+  <Single Name="ProductCode" Type="uint">0</Single>
+  <Single Name="KeepOnParentOnlineChange" Type="bool">False</Single>
+</Single>

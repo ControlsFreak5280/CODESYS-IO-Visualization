@@ -1,0 +1,21 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "fcd32611-1e90-46bc-b1dd-149079029e35",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE Accum_Value_UDT :
+STRUCT
+	EndTime: PLCClock_UDT;
+	ValueMax: REAL;
+	ValueMin: REAL;
+	Total: REAL;
+END_STRUCT
+END_TYPE

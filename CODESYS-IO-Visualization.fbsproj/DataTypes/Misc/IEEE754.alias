@@ -1,0 +1,21 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "c08fe61d-18a9-4fc5-b038-40fe83e176d7",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE IEEE754 :
+UNION
+	rValue : REAL;
+	awValue : ARRAY [0..1] OF WORD;
+	abValue : ARRAY [0..3] OF BYTE;
+	dwValue: DWORD;
+END_UNION
+END_TYPE

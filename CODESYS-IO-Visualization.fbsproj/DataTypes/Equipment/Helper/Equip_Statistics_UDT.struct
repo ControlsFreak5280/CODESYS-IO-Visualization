@@ -1,0 +1,42 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "4717c823-5397-436f-9dd6-2aad02b675e7",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE Equip_Statistics_UDT :
+STRUCT
+	RuntimeCumulative: Runtime_UDT := (Period := 0, Timebase := 3600.0, Gain := 1.0);
+	RuntimeDaily: Runtime_UDT := (Period := 2, Timebase := 3600.0, Gain := 1.0);
+	RuntimeMonthly: Runtime_UDT := (Period := 3, Timebase := 3600.0, Gain := 1.0);
+	OOSTime: Runtime_UDT := (Period := 0, Timebase := 3600.0, Gain := 1.0);
+	OOSTimeDaily: Runtime_UDT := (Period := 2, Timebase := 3600.0, Gain := 1.0);
+	OOSTimeMonthly: Runtime_UDT := (Period := 3, Timebase := 3600.0, Gain := 1.0);
+	AvailableTime: Runtime_UDT := (Period := 0, Timebase := 3600.0, Gain := 1.0);
+	AvailableTimeDaily: Runtime_UDT := (Period := 2, Timebase := 3600.0, Gain := 1.0);
+	AvailableTimeMonthly: Runtime_UDT := (Period := 3, Timebase := 3600.0, Gain := 1.0);
+
+	StartsCumulative: UDINT;
+	StartsToday: UINT;
+	StartsYesterday: UINT;
+	StartsMonth: UINT;
+	StartsLastMonth: UINT;
+	StartsPerHourLimit: UINT := 3;
+	ActualStartsThisHour: UINT;
+	ExcessiveStartsPerHour: BOOL;
+
+	StatInput: BOOL;
+	OOSInput: BOOL;
+	AvailalbeInput: BOOL;
+	LastStat: BOOL;
+	DailyResetDone: BOOL;
+	MonthlyResetDone: BOOL;
+END_STRUCT
+END_TYPE

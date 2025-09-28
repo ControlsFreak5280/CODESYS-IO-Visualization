@@ -1,0 +1,125 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "2234ca5a-a1f7-4167-8541-ef45a414da1e",
+    "objectTypeGuid": "ffbfa93a-b94d-45fc-a329-229860183b1d",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+VAR_GLOBAL
+
+	Plant: Plant_UDT :=
+	(
+
+		AmbientTemp :=
+		(
+			TagDesc := "Ambient Temperature", TagNo := "TI-10001",
+			CurVal := (EU := "C", LowRange :=  0.0, HighRange :=  500.0),
+			CurVal2 := (EU := "F", LowRange :=  32.0, HighRange :=  932.0, Offset :=  32.0, Multiplier :=  1.8, Mode := 1, InUse := TRUE),
+			DeviceFail := (Enable := TRUE, Description := "Failed", EnableLatch := FALSE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+			HiHi := (Enable := TRUE, Description := "HiHi", EnableLatch := FALSE, Rising := TRUE, Setpoint :=  30.0, Deadband :=  1.0, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+			Hi := (Enable := TRUE, Description := "Hi", EnableLatch := FALSE, Rising := TRUE, Setpoint :=  28.0, Deadband :=  1.0, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+			Lo := (Enable := TRUE, Description := "Lo", EnableLatch := FALSE, Rising := FALSE, Setpoint :=  15.0, Deadband :=  1.0, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+			LoLo := (Enable := TRUE, Description := "LoLo", EnableLatch := FALSE, Rising := FALSE, Setpoint :=  13.0, Deadband :=  1.0, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0))
+		),
+
+		Pump1 :=
+		(
+
+			Temp :=
+			(
+				TagDesc := "Pump 1 Temperature", TagNo := "TI-10002",
+				CurVal := (EU := "C", LowRange :=  0.0, HighRange :=  500.0),
+				CurVal2 := (EU := "F", LowRange :=  32.0, HighRange :=  932.0, Offset :=  32.0, Multiplier :=  1.8, Mode := 1, InUse := TRUE),
+				DeviceFail := (Enable := TRUE, Description := "Failed", EnableLatch := FALSE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+				HiHi := (Enable := TRUE, Description := "HiHi", EnableLatch := FALSE, Rising := TRUE, Setpoint :=  150.0, Deadband :=  1.0, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+				Hi := (Enable := TRUE, Description := "Hi", EnableLatch := FALSE, Rising := TRUE, Setpoint :=  160.0, Deadband :=  1.0, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+				Lo := (Enable := TRUE, Description := "Lo", EnableLatch := FALSE, Rising := FALSE, Setpoint :=  20.0, Deadband :=  1.0, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+				LoLo := (Enable := TRUE, Description := "LoLo", EnableLatch := FALSE, Rising := FALSE, Setpoint :=  18.0, Deadband :=  1.0, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0))
+			),
+
+			Flow :=
+			(
+				TagDesc := "Pump 1 Flow", TagNo := "AI-10004",
+				CurVal := (EU := "gpm", LowRange :=  0.0, HighRange :=  5000.0, ClampLowEnable := TRUE, ClampLow := 10.0),
+				CurVal2 := (EU := "mgd", LowRange :=  0.0, HighRange :=  7.2, Offset :=  0.0, Multiplier :=  0.00144, Mode := 1, InUse := TRUE),
+				DeviceFail := (Enable := TRUE, Description := "Failed", EnableLatch := FALSE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+				DeviceWarning := (Enable := TRUE, Description := "Warning", EnableLatch := FALSE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+				HiHi := (Enable := TRUE, Description := "HiHi", Rising := TRUE, Setpoint :=  4500.0, Deadband :=  10.0, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+				Hi := (Enable := TRUE, Description := "Hi", Rising := TRUE, Setpoint :=  4000.0, Deadband :=  10.0, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+				Accum := 
+				[
+					(Enable := TRUE, Period := 2, Gain :=  0.000001, Timebase := 60.0, ZeroLimit :=  0.01, EU := "mg", Description := "Daily Total", MaxTotalChange := 10.0, Mode := 0),
+					(Enable := TRUE, Period := 3, Gain :=  0.000001, Timebase := 60.0, ZeroLimit :=  0.01, EU := "mg", Description := "Monthly Total", MaxTotalChange := 10.0, Mode := 0),
+					(Enable := TRUE, Period := 0, Gain :=  0.000001, Timebase := 60.0, ZeroLimit :=  0.01, EU := "mg", Description := "Total", MaxTotalChange := 10.0, Mode := 0) 
+				]
+			),
+
+			InletValve :=
+			(
+				TagDesc := "Pump 1 Inlet Valve", TagNo := "CV-01",
+				Failure :=
+				[
+					(Enable := TRUE, Description := "Valve Failed", EnableLatch := TRUE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+					(Enable := TRUE, Description := "Valve Overload", EnableLatch := TRUE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+					(Enable := TRUE, Description := "Valve Communications Failure", EnableLatch := FALSE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0))
+				],
+				Warning :=
+				[
+					(Enable := TRUE, Description := "Valve Alarm", EnableLatch := FALSE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0))
+				],
+				Interlock :=
+				[
+					(Enable := TRUE, Description := "Valve Interlock", EnableLatch := FALSE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0))
+				],
+				NotReady :=
+				[
+					(Enable := TRUE, Description := "Not in Auto", EnableLatch := FALSE, Setpoint := FALSE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0))
+				]
+			),
+
+			OutletValve :=
+			(
+				TagDesc := "Pump 1 Outlet Valve", TagNo := "CV-02",
+				Failure :=
+				[
+					(Enable := TRUE, Description := "Valve Failed", EnableLatch := TRUE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+					(Enable := TRUE, Description := "Valve Overload", EnableLatch := TRUE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0)),
+					(Enable := TRUE, Description := "Valve Communications Failure", EnableLatch := FALSE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0))
+				],
+				Warning :=
+				[
+					(Enable := TRUE, Description := "Valve Alarm", EnableLatch := FALSE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0))
+				],
+				Interlock :=
+				[
+					(Enable := TRUE, Description := "Valve Interlock", EnableLatch := FALSE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0))
+				],
+				NotReady :=
+				[
+					(Enable := TRUE, Description := "Not in Auto", EnableLatch := FALSE, Setpoint := FALSE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0))
+				]
+			),
+
+			VFD :=
+			(
+				TagDesc := "Pump 1 VFD", TagNo := "VFD-01",
+				PIDSettings1 := (InUse := TRUE, P :=  3.0, I :=  0.5, D :=  0.0, DB :=  1.0, DB_Enable := FALSE, Description := "Flow PID Settings"),
+				PID := (irLoLimitSP := 0.0, irHiLimitSP := 5000.0),
+				Failure :=
+				[
+					(Enable := TRUE, Description := "VFD Fault", EnableLatch := FALSE, Setpoint := TRUE, OnTimer := (PT :=  1.0), OffTimer := (PT :=  0.0))
+				],
+				Timer0 :=
+				[
+					(PT := 2.0)
+				]
+			)
+		)
+	);
+END_VAR

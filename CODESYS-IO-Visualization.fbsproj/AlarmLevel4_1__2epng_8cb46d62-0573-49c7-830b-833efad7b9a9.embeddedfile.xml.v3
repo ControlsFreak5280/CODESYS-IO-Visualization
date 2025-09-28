@@ -1,0 +1,17 @@
+__V3_META__
+{
+  "objectName": "5ce3da45-db07-42e7-a21c-a00fff4ed8f6|S:\\Projects\\DW\\NTP\\SCADA\\Images\\AlarmLevel4_1.png",
+  "objectGuid": "8cb46d62-0573-49c7-830b-833efad7b9a9",
+  "objectTypeGuid": "9001d745-b9c5-4d77-90b7-b29c3f77a23b",
+  "embeddedObjectTypeGuids": [],
+  "properties": {},
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{9001d745-b9c5-4d77-90b7-b29c3f77a23b}" Method="IArchivable">
+  <Single Name="AutoUpdateMode" Type="string">Prompt</Single>
+  <Array Name="Data" Type="byte">iVBORw0KGgoAAAANSUhEUgAAACQAAAAjCAYAAAD8BaggAAAAAXNSR0IArs4c6QAAApRJREFUWAljYKAcsLAysy0FGmNDuVGUm8DCwca9Q1pM+ScLM8u3gXYU2DHqcobf65Lm/w9zzv1PDUcxkxlIIMdskZdQsw93yeNgYmJmEBWUZhARkGK9+ehc5L///w4CzX1EjtnkOAjDMTCLqeEoUh2E0zHUchQpDiLoGGo4ilgHEe0YSh1FjINIdgwljiLkILIdQ66j8DmIYseQ4yhcDqKaY0h1FDYHUd0xpDgK3UFkO2b6uur/528eZDDWcGSEOQAbTajwZELSRLZjrt479f/lu8d4HYJkD4OWoilDkEMmJ7Du2wUUR2klwBxEtmNAFh26sJFBQVLzP7KlhNi4HAVyEEWO2XdmzX9mYOUqJ65KyA0Y8tgcxQRsXC0UF5JxhNXaGLrwCHz4/Ob/8cs7GALt0/Gowi8FcpSPdSInsMWwB6hSh+n331/Tn7158PPJq7v4dWKRXb67n8FG3wfU9CA6/aAb8+v3D4aT1/Z8Z2Fi2Q2UuwGKsiO///z0Wryj+/OjF7fQ1ePkr9wzCRxV9kYBFDlm/tb2728/PNv768/PQKBlf5ANs2FlYd8W61HKKyehhtMhIIkfP7/+n7y6nOHrj0/I+sF6gEngf1pAI8FQA4UMumNABqAbSLSjwLYjEaDEfefJJYa0gCZ0M5FUQZi4HAOShWV7mCayog+mmRgan2NA+nH5huyQwucoQo4B6UWvOmDmPfr37+/hK/dOhipIaLDz8wjDxMmmiXEMyHBcDgLJUc1RxDqGkIOo4ihSHEOMgyhyFKmOIdZBZDmKHMeQ4iCSHEWuY0h1EFGOosQx5DgIr6ModQy5DsLqKGo4BmQwpQBUon+K8Sj5Lymi+I2NhX0z0EAWSg2lVL8NsHH1g1qOAQDLlf/Q4AIipAAAAABJRU5ErkJggg==</Array>
+  <Single Name="LastModification" Type="System.DateTime">08/20/2019 06:02:44</Single>
+  <Single Name="Frozen" Type="bool">True</Single>
+</Single>

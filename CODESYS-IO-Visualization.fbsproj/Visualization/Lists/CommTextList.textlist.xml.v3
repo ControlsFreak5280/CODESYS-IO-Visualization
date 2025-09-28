@@ -1,0 +1,34 @@
+__V3_META__
+{
+  "objectGuid": "4ca380cb-8bc0-45d2-b4ab-62a06c05bd6a",
+  "objectTypeGuid": "2bef0454-1bd3-412a-ac2c-af0f31dbc40f",
+  "embeddedObjectTypeGuids": [],
+  "properties": {},
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{2bef0454-1bd3-412a-ac2c-af0f31dbc40f}" Method="IArchivable">
+  <Single Name="UniqueIdGenerator" Type="string">0</Single>
+  <List Name="TextList" Type="System.Collections.ArrayList">
+    <Single Type="{53da1be7-ad25-47c3-b0e8-e26286dad2e0}" Method="IArchivable">
+      <Single Name="TextID" Type="string">0</Single>
+      <Single Name="TextDefault" Type="string">Comm OK</Single>
+      <List Name="LanguageTexts" Type="System.Collections.ArrayList" />
+    </Single>
+    <Single Type="{53da1be7-ad25-47c3-b0e8-e26286dad2e0}" Method="IArchivable">
+      <Single Name="TextID" Type="string">1</Single>
+      <Single Name="TextDefault" Type="string">Comm Failed</Single>
+      <List Name="LanguageTexts" Type="System.Collections.ArrayList" />
+    </Single>
+    <Single Type="{53da1be7-ad25-47c3-b0e8-e26286dad2e0}" Method="IArchivable">
+      <Single Name="TextID" Type="string"></Single>
+      <Single Name="TextDefault" Type="string"></Single>
+      <List Name="LanguageTexts" Type="System.Collections.ArrayList" />
+    </Single>
+  </List>
+  <List Name="Languages" Type="System.Collections.ArrayList" />
+  <Single Name="GuidInit" Type="System.Guid">1be7ea31-dddf-4cf8-8f12-cb4c205e8434</Single>
+  <Single Name="GuidReInit" Type="System.Guid">d04c775e-5bb1-43b3-9a03-2155b1b02a90</Single>
+  <Single Name="GuidExitX" Type="System.Guid">5dbdda27-4b96-4dae-a97a-22feb8a4098a</Single>
+</Single>

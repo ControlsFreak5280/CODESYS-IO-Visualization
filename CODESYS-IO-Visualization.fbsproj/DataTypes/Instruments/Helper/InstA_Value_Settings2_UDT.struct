@@ -1,0 +1,26 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "094aae73-03f9-4fb3-b439-1619baf980f4",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE InstA_Value_Settings2_UDT :
+STRUCT
+	Value: REAL;
+	Mode: INT;	// 0 = Disabled, 1 = (m * x) + b, 2 = (m + b) * x
+	Multiplier: REAL := 1.0;
+	Offset: REAL := 0.0;
+	InUse: BOOL := FALSE;
+
+	HighRange: REAL := 100.0;
+	LowRange: REAL := 0.0;
+	EU: WSTRING(80);
+END_STRUCT
+END_TYPE

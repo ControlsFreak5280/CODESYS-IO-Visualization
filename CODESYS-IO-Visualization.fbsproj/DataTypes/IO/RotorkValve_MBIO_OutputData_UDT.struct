@@ -1,0 +1,23 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "fd5f66d7-c3d6-472a-8618-8d375b20fb75",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE RotorkValve_MBIO_OutputData_UDT :
+STRUCT
+	// ************** Note: Do NOT write to both Reg05 and Reg06 at the same time, use one or the other ***************************
+	
+	Reg05: WORD;	// Actuator Control (0 = Stop, 1 = Close, 2 = Open, 3 = ESD, 4 = Partial Stroke Test, 5-255 = no action
+	Reg06: WORD;	// Actuator Position Command (x10)
+	Reg07: WORD;	// Action on Loss of comms (0 = Nothing, 1 = Open, 3 = Closed, 5 = Stop, 7 = Postion)
+	Reg13: WORD;	// Position Command on loss of comms (x1)
+END_STRUCT
+END_TYPE

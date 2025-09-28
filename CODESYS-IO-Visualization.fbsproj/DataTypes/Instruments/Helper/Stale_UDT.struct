@@ -1,0 +1,21 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "111e39a9-4df6-45ff-a0d8-2575cea924cb",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE Stale_UDT :
+STRUCT
+	Enable: BOOL;							//Input: Enable Stale Detections
+	Detected: BOOL;							//Output: Stale Condition has been detected
+	PrevValue: REAL;
+	StaleTimer: Timer_UDT := (PT := 300.0);
+END_STRUCT
+END_TYPE

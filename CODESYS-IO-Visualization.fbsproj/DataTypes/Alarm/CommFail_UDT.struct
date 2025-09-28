@@ -1,0 +1,21 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "c1f632c8-76aa-4581-abfe-81b6e8e6953a",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE CommFail_UDT :
+STRUCT
+	MonitorValue: INT;				// The value to monitor
+	LastValue: INT;					// Last recorded value
+	Delay: REAL;					// Alarm Delay
+	Alarm: AlarmDigital_UDT;		// Comm Alarm UDT
+END_STRUCT
+END_TYPE

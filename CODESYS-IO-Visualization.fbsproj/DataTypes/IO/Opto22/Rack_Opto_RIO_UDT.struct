@@ -1,0 +1,24 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "bac46ef3-7dce-4682-9979-f0f7b2389bf8",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE Rack_Opto_RIO_UDT EXTENDS Rack_UDT :
+STRUCT
+	// Opto 22 RIO Specific Items
+	Modules: ARRAY[0..Lib_GVL.MaxModuleCount] OF Module_Opto_UDT;		// Rack Modules
+	Rack_IO: POINTER TO OPTO.IoDrvOptoIoUnit;							// Pointer to Rack Object
+	ConfigFinished: BOOL;												// Config Finished - from hardware
+	ConfigStepError: BOOL;												// Config Step Error - from hardware
+	Deactivated: BOOL;													// Deactivated - from hardware
+	DiagString: WSTRING(160);											// Diag String - from hardware
+END_STRUCT
+END_TYPE

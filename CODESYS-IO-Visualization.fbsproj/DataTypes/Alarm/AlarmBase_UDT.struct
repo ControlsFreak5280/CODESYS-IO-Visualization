@@ -1,0 +1,43 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "9fa8c2c6-0ee1-4033-adf0-50c537957e7e",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE AlarmBase_UDT :
+STRUCT
+	Enable: BOOL;					//Input: Enable the Alarm and Active Outputs
+	EnableAlarm: BOOL := TRUE;		//Input: Enable the Alarm Output, Active Output will still work if this is Off
+	EnableLatch: BOOL;				//Input: Set this to a latching alarm
+	Description: WSTRING(256);		//Input: A Description for this alarm
+	DisplayName: WSTRING(50);		//Input: Display Name for Visualization
+	Reset: BOOL;					//Input: Reset the latched alarm
+	ResetCount: BOOL;				//Input: Reset the Alarm Counter
+	Restart: BOOL;					//Input: Reset the active alarm and restart timers
+	InUse: BOOL;					//Input: Used for Visualization.  Note, if alarm is enabled, InUse will automatically be turned ON.
+	Severity: INT := 0;				//Input: Alarm severity 0 - 1000
+	
+	OnTiming: BOOL;					//Output: The On timer is running
+	OffTiming: BOOL;				//Output: The Off timer is running
+	Active: BOOL;					//Output: Event output to be used inside PLC Code
+	Alarm: BOOL;					//Output: Alarm output to be used by SCADA (can be disabled with "EnableAlarm" Input
+	ActiveTime: WSTRING(80);			//Output: The last time this alarm was active
+	Count: UDINT;					//Output: The number of alarms generated since last Reset
+	InCount: UDINT;					//Output: The number of times the alarm has started timing since the last Reset
+	AlarmLevel: INT;				//Output: The Alarm Level (1-6) based on the Severity.  Will be zero if the alarm is not active.
+	
+	OnTimer: Timer_UDT;				//Alarm On Delay Timer
+	OffTimer: Timer_UDT;			//Alarm Off Delay Timer
+	
+	FrameIndex: INT;				//Internal: Used in Visualization
+	
+	OOS: BOOL;						//Input: The device using this alarm is out of service
+END_STRUCT
+END_TYPE

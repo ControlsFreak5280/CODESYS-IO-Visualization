@@ -1,0 +1,97 @@
+__V3_META__
+{
+  "objectGuid": "f8afdd7f-9424-4c6b-93ad-c26406db9420",
+  "objectTypeGuid": "e9159722-55bc-49e5-8034-fbd278ef718f",
+  "embeddedObjectTypeGuids": [],
+  "properties": {
+    "_3S.CoDeSys.DeviceObject.ModuleType": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{0f5fe9f2-6f78-44e8-be24-5879c0c99599}\" Method=\"IArchivable\"><Single Name=\"ModuleType\" Type=\"int\">496</Single></Single>"
+  },
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{e9159722-55bc-49e5-8034-fbd278ef718f}" Method="IArchivable">
+  <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+    <Single Name="Namespace" Type="string">local</Single>
+    <Single Name="Identifier" Type="string">I2Cmaster</Single>
+    <Single Name="Default" Type="string">I²C</Single>
+  </Single>
+  <Single Name="ModuleType" Type="ushort">496</Single>
+  <Single Name="Interface" Type="string">Raspberry.I2CMaster</Single>
+  <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Parent</Single>
+  <Single Name="ConnectorId" Type="int">8</Single>
+  <Single Name="Hostpath" Type="int">-1</Single>
+  <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+    <List Name="Adapters" Type="System.Collections.ArrayList">
+      <Single Type="{3f828f0b-c67b-430a-8c93-1e9bc324df64}" Method="IArchivable">
+        <List Name="Modules" Type="System.Collections.ArrayList" />
+        <Single Name="MaxDevices" Type="int">2</Single>
+        <Single Name="SupportPlaceholderObjects" Type="bool">False</Single>
+      </Single>
+    </List>
+  </Single>
+  <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+    <List2 Name="Params" />
+    <Single Name="LmGuid" Type="System.Guid">26bc6ade-040f-5002-b7e6-443c9f42b539</Single>
+    <Null Name="Sections" />
+    <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+    <Single Name="AlwaysMapping" Type="bool">False</Single>
+    <Null Name="EditorName" />
+    <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+    <Single Name="CreateBitChannels" Type="bool">False</Single>
+  </Single>
+  <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+  <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+    <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+    <Null Name="RequiredTasks" />
+    <Single Name="NeedsBusCycle" Type="bool">False</Single>
+    <Single Name="BusCycleTask" Type="string"></Single>
+    <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Single Name="IoAppSet" Type="bool">False</Single>
+    <Array Name="PositionIds" Type="long" />
+    <Single Name="UseSlowestTask" Type="bool">False</Single>
+    <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+    <Single Name="GenerateForceVariables" Type="bool">False</Single>
+    <Single Name="EnableDiagnosis" Type="bool">False</Single>
+    <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+    <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+    <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+    <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+    <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+    <Single Name="DeviceScanSupported" Type="bool">False</Single>
+    <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+    <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+    <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+    <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+    <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+    <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+    <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+    <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+  </Single>
+  <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+  <Single Name="ModuleId" Type="int">-1</Single>
+  <Null Name="IoUpdateTask" />
+  <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+  <List Name="Constraints" Type="System.Collections.ArrayList" />
+  <Single Name="hideInStatusPage" Type="bool">False</Single>
+  <Single Name="updateAllowed" Type="bool">True</Single>
+  <Single Name="fixedInputAddress" Type="string"></Single>
+  <Single Name="fixedOutputAddress" Type="string"></Single>
+  <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+  <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+  <Single Name="InitialStatusFlag" Type="uint">1</Single>
+  <Single Name="UseBlobInitConst" Type="bool">False</Single>
+  <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+  <Single Name="ConnectorGroup" Type="uint">0</Single>
+  <Array Name="AllowedPages" Type="string" />
+  <Single Name="AlwaysMapping" Type="bool">False</Single>
+  <Single Name="Client" Type="string"></Single>
+  <Single Name="MaxInputSize" Type="uint">0</Single>
+  <Single Name="MaxOutputSize" Type="uint">0</Single>
+  <Single Name="MaxInOutputSize" Type="uint">0</Single>
+  <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+  <Single Name="ClientConnectorInterface" Type="string"></Single>
+  <Single Name="ClientConnectorId" Type="int">-1</Single>
+  <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+</Single>

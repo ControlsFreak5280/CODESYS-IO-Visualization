@@ -1,0 +1,37 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "75bdd8f4-41ad-42d7-9219-032036e904fa",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE IO_Simulator_UDT :
+STRUCT
+	irPercent: REAL;
+	ibValue: BOOL;
+	irLowLimit: REAL;
+	irHighLimit: REAL := 100.0;
+	irNoisePct: REAL := 0.0;
+	ibDisableOutput: BOOL;
+	irChangeRate: REAL := 5.0;
+	
+	orPercent: REAL;
+	orValue: REAL;
+	orValue2: REAL;
+	orValue3: REAL;
+	orValue4: REAL;
+	obValue: BOOL;
+	odiStatusCode: DINT;
+	osStatusCode: WSTRING(256);
+	
+	ChangeRamp: OSCAT_BASIC.SRAMP;
+	RandomNumber: REAL;
+	Noise: REAL;
+END_STRUCT
+END_TYPE

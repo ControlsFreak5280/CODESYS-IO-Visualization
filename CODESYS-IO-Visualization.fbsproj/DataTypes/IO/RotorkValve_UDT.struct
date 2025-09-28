@@ -1,0 +1,81 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "e39d5f0f-c729-49d3-b39e-3df457c89cde",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE RotorkValve_UDT :
+STRUCT
+	Description: WSTRING;				//A Description for this Device
+	LoopNumber: WSTRING;				//The Engineering Loop Definition for this value
+	IPAddress: WSTRING(20);				//Input: The IP Address of this Device
+	CI: BOOL;							//Control Inhibit: Disable Communication with end device
+	Status : DINT;						//Device Status Code
+
+	// Modbus IO
+	InputData: RotorkValve_MBIO_InputData_UDT;
+	OutputData: RotorkValve_MBIO_OutputData_UDT;
+
+	// Incoming Data
+	InputReg00: WORD;	
+	Actuator_Moving: BOOL;
+	Valve_Closed: BOOL;
+	Valve_Opened: BOOL;
+	Running_Closed: BOOL;
+	Running_Open: BOOL;
+	Remote_Selected: BOOL;
+	Local_Stop_Selected_Offline: BOOL;
+	Local_Stop_Selected: BOOL;
+	Thermostat_Tripped: BOOL;
+	Monitor_Relay: BOOL;
+	Valve_Obstructed: BOOL;
+	Valve_Jammed: BOOL;
+	Valve_Moving_By_Hand: BOOL;
+	Moving_Inhibited_by_MIT: BOOL;
+	Position_Control_Enabled: BOOL;
+	EEPROM_Checksum_Failure: BOOL;
+	
+	InputReg01: WORD;
+	Battery_Low: BOOL;
+	Open_Interlock_Active: BOOL;
+	Close_Interlock_Active: BOOL;
+	DI_1: BOOL;
+	DI_2: BOOL;
+	DI_3: BOOL;
+	DI_4: BOOL;
+	Reserved_7: BOOL;
+	Reserved_8: BOOL;
+	Reserved_9: BOOL;
+	Control_Contention: BOOL;
+	Partial_Stroke_Test_in_Progress: BOOL;
+	Partial_Stroke_Test_Error: BOOL;
+	General_Alarm: BOOL;
+	Reserved_14: BOOL;
+	Reserved_15: BOOL;
+	
+	Actuator_Torque: REAL;
+	Valve_Position: REAL;
+	Analog_Input: REAL;
+
+	// Outgoing Data
+	Actuator_Control: INT;						// Actuator Control (0 = Stop, 1 = Close, 2 = Open, 3 = ESD, 4 = Partial Stroke Test, 5-255 = no action
+	Actuator_Position_Command: REAL;			// Actuator Position Command
+	SignalLossAction: INT;						// Action on Loss of comms (0 = Nothing, 1 = Open, 3 = Closed, 5 = Stop, 7 = Postion)
+	SignalLossPosition: INT;					// Position Command on loss of comms
+
+	// Slave Information
+	SlaveState: UINT;
+	SlaveError: BOOL;
+	SlaveErrorCode: INT;
+	
+	SimulationEnable: BOOL := TRUE;
+	Simulator: RotorkValve_Simulator_UDT;
+END_STRUCT
+END_TYPE

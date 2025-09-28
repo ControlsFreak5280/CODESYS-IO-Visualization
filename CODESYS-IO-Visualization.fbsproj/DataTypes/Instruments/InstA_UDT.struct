@@ -1,0 +1,66 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "c996186d-4d43-40c1-9969-8a213bfcd927",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE InstA_UDT EXTENDS dutPersistObject :
+STRUCT
+	TagNo: WSTRING(80);					//The Engineering Tag Name for this equipment
+	TagDesc: WSTRING(256);				//Input: A Description for this Value
+
+	RawVal: REAL;						//Input: The Raw Analog Value
+	RawValStatusCode: DINT;				//Input: The Raw Analog Value Status Code
+	RawVal_Total: REAL;					//Input: The Raw Analog Value - from totalizer
+	ManualValue: REAL;					//Input: The manual value, when in manual
+	Mode: INT;							//Input: 0 = Online (read Raw Value), 1 = Manual (use Manual Value)
+	FailAction: INT;					//Input: 0 = Fail Value, 1 = Hold, 2 = Raw Value
+	FailValue: REAL;					//Input: The Fail Value
+	HMISP: REAL := 0.0;					//Input: A setpoint used for controlling this instrument (Optional)
+	HMISP_InUse: BOOL;					//Input: Used to indicate when HMISP is used (typically for Visualization)
+	
+	MaxSeverity: INT;					//Output: The highest severity setting for all alarms
+	AlarmLevel: INT;					//Output: The worst alarm level for all alarms.  Zero when no alarms active
+	
+	CurVal: InstA_Value_Settings_UDT;	//Output: Output Value 1
+	CurVal2: InstA_Value_Settings2_UDT;	//Output: Output Value 2
+	CurVal3: InstA_Value_Settings2_UDT;	//Output: Output Value 3
+
+	StatusCode: DINT;					//Output: Output Status Code
+	GlobalStatusCode: DINT;				//Output: Output Status Code
+	GlobalStatusString: WSTRING(256) := "OK";	//Output: A Description for the status code
+
+	DeviceFail: AlarmDigital_UDT := (Enable := TRUE, OnTimer := (PT := 30.0), Severity := 600);		//Output: Invalid Value (QB Bit)
+	DeviceWarning: AlarmDigital_UDT := (Enable := TRUE, OnTimer := (PT := 30.0), Severity := 500);	//Output: Invalid Value (QB Bit)
+	OOS: AlarmDigital_UDT := (Enable := TRUE, OnTimer := (PT := 30.0), Severity := 100);				//Output: Device Out of Service
+
+	HiHi: AlarmAnalog_UDT := (Rising := TRUE);										//Output: HiHi Alarm Object
+	Hi: AlarmAnalog_UDT := (Rising := TRUE);										//Output: Hi Alarm Object
+	Mid2: AlarmAnalog_UDT := (Rising := TRUE);										//Output: Mid 2 Alarm Object
+	Mid1: AlarmAnalog_UDT := (Rising := FALSE);										//Output: Mid 1 Alarm Object
+	Lo: AlarmAnalog_UDT := (Rising := FALSE);										//Output: Lo Alarm Object
+	LoLo: AlarmAnalog_UDT := (Rising := FALSE);										//Output: LoLo Alarm Object
+	SpDeviation: AlarmAnalog_UDT := (Rising := TRUE, OnTimer := (PT := 30.0), Severity := 100);		//Output: Setpoint Deviation Alarm
+
+	Accum: ARRAY[0..4] OF Accum_UDT;
+	Accum_InUse: BOOL;
+	Stale: Stale_UDT;
+	
+	Sim: InstA_Sim_UDT;
+	
+	ValueBuffer: ARRAY[0..59] OF REAL;		//Internal: Value Buffer for Average Calculation
+	ValueCount: INT;						//Internal: Value Count for Average Calculation
+	ValueTimer: Timer_UDT := (PT := 1.0);	//Internal: Timer for filling Value Buffer
+	TempVal: REAL;
+	ValueSum: REAL;
+	i: INT;
+	FrameIndex: INT;				//Internal: Used in Visualization
+END_STRUCT
+END_TYPE

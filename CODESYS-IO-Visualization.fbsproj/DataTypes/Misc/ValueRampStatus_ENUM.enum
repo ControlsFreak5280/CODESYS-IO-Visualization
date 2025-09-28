@@ -1,0 +1,22 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "f013d7fa-6074-4d2f-abd8-5dd0c4db7f2e",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE ValueRampStatus_ENUM :
+(
+	Matched := 0,
+	OutLow := 1,
+	OutHigh := 2
+);
+END_TYPE

@@ -1,0 +1,55 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "5506e4e0-7997-402d-8ed5-fd81e3a186de",
+    "objectTypeGuid": "ffbfa93a-b94d-45fc-a329-229860183b1d",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+VAR_GLOBAL
+	Rack_01: Rack_Opto_RIO_UDT := (SlotCount := 8, InUse := TRUE,
+		Modules := 
+		[
+			(SlotNumber := 0, InUse := TRUE, ModuleType := "UIO", ChannelCount := 10, Channels := 
+			[
+				(ZeroRaw := 1000.0, SpanRaw := 1839.7, Units := "C", ZeroEu := 0.0, SpanEu := 500.0, ChannelType := IOChannelType.ctAI, SignalName := "Ambient_Temp", LoopNumber := "TI-10001", Description := "Ambient Temperature", InvertValue := FALSE),
+				(ZeroRaw := 0.0, SpanRaw := 500.0, Units := "C", ZeroEu := 0.0, SpanEu := 500.0, ChannelType := IOChannelType.ctAI, SignalName := "Pump_Temp", LoopNumber := "TI-10002", Description := "Pump 1 Temperature", InvertValue := FALSE),
+				(ZeroRaw := 0.0, SpanRaw := 10.0, Units := "%", ZeroEu := 0.0, SpanEu := 100.0, ChannelType := IOChannelType.ctAI, SignalName := "Pump_Speed", LoopNumber := "AI-10003", Description := "Pump 1 Speed", InvertValue := FALSE),
+				(ZeroRaw := 0.0, SpanRaw := 10.0, Units := "gpm", ZeroEu := 0.0, SpanEu := 5000.0, ChannelType := IOChannelType.ctAI, SignalName := "Pump_Flow", LoopNumber := "AI-10004", Description := "Pump 1 Flow", InvertValue := FALSE),
+				(ZeroRaw := 4.0, SpanRaw := 16.0, Units := "", ZeroEu := 0.0, SpanEu := 100.0, ChannelType := IOChannelType.ctDI, SignalName := "Pump_Stat", LoopNumber := "YRI-10005", Description := "Pump 1 Running", InvertValue := FALSE),
+				(ZeroRaw := 4.0, SpanRaw := 16.0, Units := "", ZeroEu := 0.0, SpanEu := 100.0, ChannelType := IOChannelType.ctDI, SignalName := "Pump_Failed", LoopNumber := "YFI-10005", Description := "Pump 1 Failed", InvertValue := FALSE),
+				(ZeroRaw := 4.0, SpanRaw := 16.0, Units := "%", ZeroEu := 0.0, SpanEu := 100.0, ChannelType := IOChannelType.ctAO, SignalName := "Pump_Speed_Out", LoopNumber := "AO-10007", Description := "Pump 1 Speed Out", InvertValue := FALSE),
+				(ZeroRaw := 4.0, SpanRaw := 16.0, Units := "gpm", ZeroEu := 0.0, SpanEu := 5000.0, ChannelType := IOChannelType.ctAO, SignalName := "Pump_Flow_Out", LoopNumber := "AO-10008", Description := "Pump 1 Flow Out", InvertValue := FALSE),
+				(ZeroRaw := 4.0, SpanRaw := 16.0, Units := "", ZeroEu := 0.0, SpanEu := 100.0, ChannelType := IOChannelType.ctDO, SignalName := "Pump_Running_Out", LoopNumber := "DO-10009", Description := "Pump 1 Running Out", InvertValue := FALSE),
+				(ZeroRaw := 4.0, SpanRaw := 16.0, Units := "", ZeroEu := 0.0, SpanEu := 100.0, ChannelType := IOChannelType.ctDO, SignalName := "Pump_Failed_Out", LoopNumber := "DO-10010", Description := "Pump 1 Failed Out", InvertValue := FALSE)
+			]),
+
+			(SlotNumber := 1, InUse := FALSE, ModuleType := "NA", ChannelCount := 0),
+
+			(SlotNumber := 2, InUse := FALSE, ModuleType := "NA", ChannelCount := 0),
+
+			(SlotNumber := 3, InUse := FALSE, ModuleType := "NA", ChannelCount := 0),
+
+			(SlotNumber := 4, InUse := FALSE, ModuleType := "NA", ChannelCount := 0),
+
+			(SlotNumber := 5, InUse := FALSE, ModuleType := "NA", ChannelCount := 0),
+
+			(SlotNumber := 6, InUse := FALSE, ModuleType := "NA", ChannelCount := 0),
+
+			(SlotNumber := 7, InUse := FALSE, ModuleType := "NA", ChannelCount := 0)
+		]
+	);
+
+	Pump_Inlet_Valve_MB: RotorkValve_UDT := (Description := "Pump 1 Inlet Valve", LoopNumber := "CV-01",IPAddress := "192.168.160.39", SimulationEnable := TRUE);
+	Pump_Inlet_Valve_In: RotorkValve_MBIO_InputData_UDT;
+	Pump_Inlet_Valve_Out: RotorkValve_MBIO_OutputData_UDT;
+
+	Pump_Outlet_Valve_MB: RotorkValve_UDT := (Description := "Pump 1 Outlet Valve", LoopNumber := "CV-02",IPAddress := "192.168.160.39", SimulationEnable := TRUE);
+	Pump_Outlet_Valve_In: RotorkValve_MBIO_InputData_UDT;
+	Pump_Outlet_Valve_Out: RotorkValve_MBIO_OutputData_UDT;
+END_VAR

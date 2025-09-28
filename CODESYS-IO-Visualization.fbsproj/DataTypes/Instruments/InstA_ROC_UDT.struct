@@ -1,0 +1,36 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "3e45cbc5-fd32-4df1-ba8b-3e1a399c31a1",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE InstA_ROC_UDT EXTENDS InstA_UDT :
+STRUCT
+	CurValROC: REAL;
+	CurValROC2: REAL;
+	
+	ROCHi: AlarmAnalog_UDT := (Rising := TRUE);
+	ROCLo: AlarmAnalog_UDT := (Rising := FALSE);
+
+	CurValROC2_Mode: INT;	// 0 = Disabled, 1 = (m * x) + b, 2 = (m + b) * x
+	CurValROC2_Mult: REAL := 1.0;
+	CurValROC2_Offset: REAL := 0.0;
+	ROCReset: BOOL;
+	ROCSampleTime: REAL := 1.0;
+	ROCSampleNum: INT := 60;
+	ROCBuffer: ARRAY[0..59] OF REAL;
+	ROCCount: INT;
+	ROCTimer: Timer_UDT := (PT := 1.0);
+	
+	j: INT;
+	k: INT;
+	l: INT;
+END_STRUCT
+END_TYPE

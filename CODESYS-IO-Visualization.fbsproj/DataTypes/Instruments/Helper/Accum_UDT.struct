@@ -1,0 +1,55 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "82bc1cdf-d846-4647-8800-d0fce3ec41d7",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE Accum_UDT :
+STRUCT
+	Enable: BOOL;							//Input: Enable Totalization
+	ValueIn_Realtime: REAL;					//Input: The Realtime Value
+	ValueIn_Total: REAL;					//Input: The Totalizer value (from a flow meter totalizer)
+	Description: WSTRING(256);				//Input: A Description for this Totalizer
+	EU: WSTRING(80);							//Input: The Engineering Units
+	EU_Realtime: WSTRING(80);				//Input: The Engineering Units
+	Reset: BOOL;							//Input: Manually reset the totalizer
+	Mode: INT;								//Input: 0 = Realtime Totalizer, 1 = Read Meter Total (No Reset), 2 = Read Meter Total (with Reset)
+	ZeroLimit: REAL := 0.01;				//Input: Realtime totalizing will stop below this value
+	Gain: REAL := 0.000001;					//Input: Scaling for Flow Value - default is for GPM input, MG output (input / 1000000)
+	Timebase: REAL := 60.0;					//Input: Scaling for time component - minute = 60.0, hour = 3600.0, default is for GPM
+	Period: SINT;           				//Input: 0 = Manual, 1 = Hour, 2 = Day, 3 = Month, 4 = Year
+	RollMonth: SINT := 1;  					//Input: Month to reset for Year Period
+	RollDay: SINT := 1;    					//Input: Day of Month to Reset for Month Period and Year Period
+	RollHour: SINT := 0;   					//Input: Hour of Day to Reset
+	RollMinute: SINT := 0;   				//Input: Minute of the Hour to Reset
+	TotalizeInterval: REAL := 60.0;			//Input: Sets the minimum interval between totalization calculations
+	Pause: BOOL;							//Input: Pause Accumulation
+	MaxTotalChange: REAL := 100000.0;		//Input: Maximum Change allowed (to prevent un-wanted accumulation for large changes)
+	Target: REAL := 0.0;					//Input: Sets the Target when using as a batch total indication
+
+	Value: ARRAY [0..9] OF Accum_Value_UDT;	//Output: The last 10 totals recorded
+	ResetTime: WSTRING(80);					//Output: The last time the totalizer was reset
+	ResetAccumulator: BOOL;					//Output: Output that can be used to send a reset command to the accumulator
+	TargetMet: BOOL;						//Output: Turns on when the current totalizer value reaches the Target Value
+
+	PauseInternal: BOOL;					//Internal: Pause Accumulation
+	ResetInternal: BOOL;					//Internal: Reset Accumulation
+	CT: CycleTime_UDT;						//Internal: Used to calculate the elapsed time
+	PrevTotal: REAL;						//Internal: The previous total value
+	ResetInProcess: BOOL;					//Internal: Reset is in process
+	ResetComplete: BOOL;					//Internal: Reset is complete
+	LastEnable: BOOL;						//Internal: Find rising edge for Counters
+	SampleSeconds: REAL;					//Internal: Seconds since last accumulation
+	
+	TempAccum: REAL;
+	i: INT;
+	DoAccum: BOOL;
+END_STRUCT
+END_TYPE

@@ -1,0 +1,49 @@
+__V3_META__
+{
+  "objectGuid": "fbeff285-450d-4305-a2e1-170691dc91ba",
+  "objectTypeGuid": "bb0b9044-714e-4614-ad3e-33cbdf34d16b",
+  "embeddedObjectTypeGuids": [],
+  "properties": {},
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{bb0b9044-714e-4614-ad3e-33cbdf34d16b}" Method="IArchivable">
+  <Single Name="UniqueIdGenerator" Type="string">22</Single>
+  <List Name="BitmapPool" Type="System.Collections.ArrayList">
+    <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+      <Single Name="BitmapID" Type="string">1</Single>
+      <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|S:\Projects\DW\NTP\SCADA\Images\AlarmLevel1_1.png</Single>
+      <Single Name="ItemID" Type="int">17</Single>
+    </Single>
+    <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+      <Single Name="BitmapID" Type="string">2</Single>
+      <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|S:\Projects\DW\NTP\SCADA\Images\AlarmLevel2_1.png</Single>
+      <Single Name="ItemID" Type="int">18</Single>
+    </Single>
+    <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+      <Single Name="BitmapID" Type="string">3</Single>
+      <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|S:\Projects\DW\NTP\SCADA\Images\AlarmLevel3_1.png</Single>
+      <Single Name="ItemID" Type="int">19</Single>
+    </Single>
+    <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+      <Single Name="BitmapID" Type="string">4</Single>
+      <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|S:\Projects\DW\NTP\SCADA\Images\AlarmLevel4_1.png</Single>
+      <Single Name="ItemID" Type="int">20</Single>
+    </Single>
+    <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+      <Single Name="BitmapID" Type="string">0</Single>
+      <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|S:\Projects\DW\NTP\SCADA\Images\Container_ModernIconHelp2.png</Single>
+      <Single Name="ItemID" Type="int">21</Single>
+    </Single>
+    <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+      <Single Name="BitmapID" Type="string"></Single>
+      <Single Name="FileID" Type="string"></Single>
+      <Single Name="ItemID" Type="int">22</Single>
+    </Single>
+  </List>
+  <Single Name="GuidInit" Type="System.Guid">38935d5b-6615-4baf-963e-ea2a2c6b6caf</Single>
+  <Single Name="GuidReInit" Type="System.Guid">814dd734-e554-4e10-bcca-13b424da8d4e</Single>
+  <Single Name="GuidExitX" Type="System.Guid">4a08069b-5c7f-4dc5-88e4-40d4f6d9bf7d</Single>
+  <Single Name="ValidIds" Type="bool">True</Single>
+</Single>

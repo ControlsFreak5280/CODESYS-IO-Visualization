@@ -1,0 +1,37 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "91dcde79-8b47-46e8-b968-2a382b4db7e2",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE InstA_Value_Settings_UDT :
+STRUCT
+	Value: REAL;
+	ValuePct: REAL;
+	ValueAvg: REAL;
+	ValueAvgPrev: REAL;
+	ValueStatus: USINT;	// 0 = Stale, 1 = Decreasing, 2 = Increasing
+	ValueStatusDly: Timer_UDT := (PT := 10.0);
+	ValueMax: REAL;
+	ValueMin: REAL;
+	Reset: BOOL;
+	InUse: BOOL := TRUE;
+	
+	ClampHighEnable: BOOL;
+	ClampHigh: REAL := 100.0;
+	ClampLowEnable: BOOL;
+	ClampLow: REAL := 0.0;
+	ClampActive: BOOL;
+	
+	HighRange: REAL := 100.0;
+	LowRange: REAL := 0.0;
+	EU: WSTRING(80);
+END_STRUCT
+END_TYPE

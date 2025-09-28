@@ -1,0 +1,89 @@
+__V3_META__
+{
+  "objectGuid": "719b0a09-9aea-4306-98a8-ed3336f7ffe6",
+  "objectTypeGuid": "ae1de277-a207-4a28-9efb-456c06bd52f3",
+  "embeddedObjectTypeGuids": [],
+  "properties": {},
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{ae1de277-a207-4a28-9efb-456c06bd52f3}" Method="IArchivable">
+  <Single Name="StackSize" Type="uint">0</Single>
+  <Single Name="UseConfigurableStackSize" Type="bool">False</Single>
+  <List Name="TaskConfigurationList" Type="{75fc8bb3-c744-4e99-b6eb-bb2796e19500}" />
+  <List Name="SystemEventList" Type="{7be1d5a4-d68c-4bc6-a7e5-e42a0ab42a09}" />
+  <Null Name="ExternalEventList" />
+  <Single Name="enum_guid" Type="System.Guid">2dfe07e0-952a-574d-86b6-53f12ab1b70c</Single>
+  <Single Name="jitter_distribution_guid" Type="System.Guid">b6bdd936-92fc-53d7-a6fd-6ebe341bec03</Single>
+  <Single Name="task_struct_guid" Type="System.Guid">dbafde2e-8224-5d04-9f87-332fa72193f5</Single>
+  <Single Name="task_config_info_guid" Type="System.Guid">1037df0d-e9e6-5be4-a803-b8184d6dfa43</Single>
+  <Single Name="task_global_vars_guid" Type="System.Guid">7095371a-b92c-577e-b85d-2a4cee9bb260</Single>
+  <Single Name="setup_call_pou_guid" Type="System.Guid">2ae2ca4f-f6ab-5148-95f0-ef057ae47808</Single>
+  <Single Name="sys_setup_pou_guid" Type="System.Guid">8b24ba04-5ad3-57b3-b7b9-12404d4b2ab3</Single>
+  <Single Name="profiler_global_vars_guid" Type="System.Guid">5acca6ba-ab42-5630-980f-f0574e1f2680</Single>
+  <Single Name="profiler_init_code_guid" Type="System.Guid">43763d0a-7b57-5699-823f-5b9b8236a3e2</Single>
+  <Single Name="profiler_cycle_code_guid" Type="System.Guid">439866e1-b2f5-53d7-8b77-b51b75b07d91</Single>
+  <Single Name="profiler_fb_guid" Type="System.Guid">f7d77a8d-a1bf-531a-88e8-7618b7c49369</Single>
+  <Single Name="profiler_method_reset_guid" Type="System.Guid">00e1e774-9bd3-5dbc-8716-dd42adfbc8f4</Single>
+  <Single Name="profiler_method_starttiming_guid" Type="System.Guid">c8177280-048c-56da-8568-bcaf594a9894</Single>
+  <Single Name="profiler_method_stoptiming_guid" Type="System.Guid">1b36e376-1089-5365-baef-5ad01c435a2a</Single>
+  <Single Name="profiler_iectaskgetprofiling_guid" Type="System.Guid">db9272be-4f41-50c7-aad7-c1a9b30a3380</Single>
+  <List2 Name="alSysEventList">
+    <Single Type="{357faaca-a279-4878-8c2f-ec7c49896fa3}" Method="IArchivable">
+      <Single Name="Eventname" Type="string">OnlineChangeDone</Single>
+      <Single Name="Description" Type="string">Called after application online change. Context=Communication task. Debugging=Disabled</Single>
+      <Single Name="stComponentId" Type="string">CmpApp.EventIDs.CMPID_CmpApp</Single>
+      <Single Name="stEventId" Type="string">CmpApp.EventIDs.EVT_OnlineChangeDone</Single>
+      <Single Name="stParameterId" Type="string">CmpApp.EventIDs.EVTPARAMID_CmpApp</Single>
+      <Single Name="stParameterVersion" Type="string">CmpApp.EventIDs.EVTVERSION_CmpApp</Single>
+      <Single Name="ParameterStruct" Type="string">CmpApp.EVTPARAM_CmpApp</Single>
+      <Null Name="Library" />
+      <Single Name="Active" Type="bool">True</Single>
+      <Single Name="FunctionToCall" Type="string">OnlineChangeDone</Single>
+      <Single Name="Position" Type="short">0</Single>
+    </Single>
+    <Single Type="{357faaca-a279-4878-8c2f-ec7c49896fa3}" Method="IArchivable">
+      <Single Name="Eventname" Type="string">PrepareStop</Single>
+      <Single Name="Description" Type="string">Called before application stops. Context=Communication task. Debugging=Disabled</Single>
+      <Single Name="stComponentId" Type="string">CmpApp.EventIDs.CMPID_CmpApp</Single>
+      <Single Name="stEventId" Type="string">CmpApp.EventIDs.EVT_PrepareStop</Single>
+      <Single Name="stParameterId" Type="string">CmpApp.EventIDs.EVTPARAMID_CmpAppStop</Single>
+      <Single Name="stParameterVersion" Type="string">CmpApp.EventIDs.EVTVERSION_CmpAppStop</Single>
+      <Single Name="ParameterStruct" Type="string">CmpApp.EVTPARAM_CmpAppStop</Single>
+      <Null Name="Library" />
+      <Single Name="Active" Type="bool">True</Single>
+      <Single Name="FunctionToCall" Type="string">PrepareStop</Single>
+      <Single Name="Position" Type="short">1</Single>
+    </Single>
+    <Single Type="{357faaca-a279-4878-8c2f-ec7c49896fa3}" Method="IArchivable">
+      <Single Name="Eventname" Type="string">StartDone</Single>
+      <Single Name="Description" Type="string">Called after application starts. Context=Communication task. Debugging=Disabled</Single>
+      <Single Name="stComponentId" Type="string">CmpApp.EventIDs.CMPID_CmpApp</Single>
+      <Single Name="stEventId" Type="string">CmpApp.EventIDs.EVT_StartDone</Single>
+      <Single Name="stParameterId" Type="string">CmpApp.EventIDs.EVTPARAMID_CmpApp</Single>
+      <Single Name="stParameterVersion" Type="string">CmpApp.EventIDs.EVTVERSION_CmpApp</Single>
+      <Single Name="ParameterStruct" Type="string">CmpApp.EVTPARAM_CmpApp</Single>
+      <Null Name="Library" />
+      <Single Name="Active" Type="bool">True</Single>
+      <Single Name="FunctionToCall" Type="string">StartDone</Single>
+      <Single Name="Position" Type="short">2</Single>
+    </Single>
+  </List2>
+  <List2 Name="alTaskGroups">
+    <Single Type="{609a42d4-f974-4041-8548-f80e229ca5ed}" Method="IArchivable">
+      <Single Name="Groupname" Type="string">IEC-Tasks</Single>
+      <Single Name="Core" Type="int">-2</Single>
+      <Single Name="DefaultGroup" Type="bool">True</Single>
+      <Single Name="Editable" Type="bool">False</Single>
+    </Single>
+  </List2>
+  <Single Name="sysevents_global_vars_guid" Type="System.Guid">9e7493c9-a1bd-5eec-be0d-0b151de7efc8</Single>
+  <Single Name="sysevents_functionsblock_guid" Type="System.Guid">d0e605df-9b21-53a1-a17f-c2a1d708fd40</Single>
+  <Single Name="sysevents_fbinit_method_guid" Type="System.Guid">49076f86-77b3-58e2-a129-d07672fa3062</Single>
+  <Single Name="sysevents_fbexit_method_guid" Type="System.Guid">85970341-4f9b-5a2e-bcd8-e646459adabc</Single>
+  <Single Name="sysevents_eventcallback_method_guid" Type="System.Guid">90dafd11-3581-5557-9c11-c0c88c0f69b8</Single>
+  <Single Name="sysevents_resetget_property_guid" Type="System.Guid">124dd907-a5cc-55f0-8f51-e68cc97c9ddd</Single>
+  <Array Name="parent_tasks" Type="System.Guid" />
+  <Single Name="device_app" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+</Single>

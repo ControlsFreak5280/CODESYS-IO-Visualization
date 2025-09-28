@@ -1,0 +1,331 @@
+{
+  "references": {
+    "CmpApp": {
+      "$type": "Placeholder",
+      "placeholder": "CmpApp",
+      "defaultResolution": "CmpApp, 3.5.21.0 (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "CmpEventMgr": {
+      "$type": "Placeholder",
+      "placeholder": "CmpEventMgr",
+      "defaultResolution": "CmpEventMgr, 3.5.17.0 (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "CmpIecTask": {
+      "$type": "Placeholder",
+      "placeholder": "CmpIecTask",
+      "defaultResolution": "CmpIecTask, 3.5.21.0 (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "Component_Manager": {
+      "$type": "Placeholder",
+      "placeholder": "Component Manager",
+      "defaultResolution": "Component Manager, 3.5.21.0 (System)",
+      "allowUnqualifiedAccess": true
+    },
+    "OPTO": {
+      "$type": "ManagedLibrary",
+      "libraryId": "Opto 22 Library, * (Opto 22)",
+      "allowUnqualifiedAccess": true
+    },
+    "OSCAT_BASIC": {
+      "$type": "ManagedLibrary",
+      "libraryId": "BASIC, 3.3.5.0 (OSCAT)",
+      "allowUnqualifiedAccess": true
+    },
+    "VisuDialogs": {
+      "$type": "Placeholder",
+      "placeholder": "VisuDialogs",
+      "defaultResolution": "VisuDialogs, * (System)",
+      "allowUnqualifiedAccess": true
+    }
+  },
+  "placeholderOverrides": {
+    "Collections": "Collections, 3.5.17.0 (System)",
+    "FloatingPointUtils": "FloatingPointUtils, 3.5.21.0 (System)",
+    "IoDrvProfinetBase": "IoDrvProfinetBase, 4.7.0.0 (CODESYS)",
+    "IoDrvProfinetDevice": "IoDrvProfinetDevice, 4.7.0.0 (CODESYS)",
+    "MemoryBlockManager": "Memory Block Manager, 3.5.21.0 (CODESYS)",
+    "Profinet": "Profinet, 4.7.0.0 (CODESYS)",
+    "ProfinetCommon": "ProfinetCommon, 4.7.0.0 (CODESYS)",
+    "ProfinetDevice": "ProfinetDevice, 4.6.0.0 (CODESYS)",
+    "RPC": "Remote Procedure Calls, 4.6.0.0 (CODESYS)",
+    "Standard": "Standard, 3.5.18.0 (System)",
+    "Standard64": "Standard64, 3.5.20.0 (System)",
+    "StringUtils": "StringUtils, 3.5.20.0 (System)",
+    "System_VisuElemBase": "VisuElemBase, 4.8.0.0 (System)",
+    "System_VisuInputs": "VisuInputs, 4.7.0.0 (System)",
+    "Util": "Util, 3.5.21.0 (System)",
+    "VisuSymbols": "VisuSymbols, 4.5.0.0 (System)"
+  },
+  "v3Meta": {
+    "objectName": null,
+    "objectGuid": "8aa72646-ea31-4265-b667-a397495d58f9",
+    "objectTypeGuid": "adb5cb65-8e1d-4a00-b70a-375ea27582f3",
+    "embeddedObjectTypeGuids": [],
+    "properties": {
+      "_3S.CoDeSys.BaseLibraries.BaseLibrariesProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{61a44170-da69-49a8-99a4-c61280b4559c}\" Method=\"IArchivable\"><Dictionary2 Name=\"PlaceholderResolution\"><Entry><Key><Single Type=\"string\">CBML</Single></Key><Value><Single Type=\"string\">Common Behaviour Model, 4.0.0.0 (CODESYS)</Single></Value></Entry><Entry><Key><Single Type=\"string\">ElementCollections</Single></Key><Value><Single Type=\"string\">Element Collections, 4.0.0.0 (CODESYS)</Single></Value></Entry><Entry><Key><Single Type=\"string\">NetBaseSrv</Single></Key><Value><Single Type=\"string\">Net Base Services, 4.0.0.0 (CODESYS)</Single></Value></Entry></Dictionary2></Single>"
+    },
+    "subObjects": {}
+  },
+  "libraryParameters": {},
+  "v3SystemLibraries": [
+    {
+      "namespace": "_3S_LICENSE",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "3SLicense",
+        "defaultResolution": "3SLicense, 0.0.0.0 (CODESYS)",
+        "resolverGuid": "97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "BPLog",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "BreakpointLogging",
+        "defaultResolution": "Breakpoint Logging Functions, * (3S - Smart Software Solutions GmbH)",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "DED",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "CAA Device Diagnosis",
+        "defaultResolution": "CAA Device Diagnosis, 3.5.21.0 (CAA Technical Workgroup)"
+      }
+    },
+    {
+      "namespace": "IoDrvEthernet",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "IoDrvEthernet",
+        "defaultResolution": "IoDrvEthernet, 4.2.0.0 (3S - Smart Software Solutions GmbH)",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "IoDrvGPIO",
+      "libraryReference": {
+        "$type": "ManagedLibrary",
+        "libraryId": "IoDrvGPIO, 4.17.0.0 (CODESYS)",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "IoDrvModbusTCP",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "IoDrvModbusTCP",
+        "defaultResolution": "IoDrvModbusTCP, 4.4.0.0 (CODESYS)",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "IoStandard",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "IoStandard",
+        "defaultResolution": "IoStandard, 3.5.17.0 (System)",
+        "allowUnqualifiedAccess": true,
+        "linkAllContent": true
+      }
+    },
+    {
+      "namespace": "SM3_Basic",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "SM3_Basic",
+        "defaultResolution": "SM3_Basic, 4.18.0.0 (CODESYS)",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "SM3_Basic_Visu",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "SM3_Basic_Visu",
+        "defaultResolution": "SM3_Basic_Visu, 4.18.0.0 (CODESYS)",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "SM3_CNC",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "SM3_CNC",
+        "defaultResolution": "SM3_CNC, 4.18.0.0 (CODESYS)",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "SM3_Robotics",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "SM3_Robotics",
+        "defaultResolution": "SM3_Robotics, 4.18.0.0 (CODESYS)",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "SM3_Robotics_Visu",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "SM3_Robotics_Visu",
+        "defaultResolution": "SM3_Robotics_Visu, 4.18.0.0 (CODESYS)",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "SMCB",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "SM3_CamBuilder",
+        "defaultResolution": "SM3_CamBuilder, 4.18.0.0 (CODESYS)",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "TRAFO",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "SM3_Transformation",
+        "defaultResolution": "SM3_Transformation, 4.18.0.0 (CODESYS)",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElem3DPath",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElem3DPath",
+        "defaultResolution": "VisuElem3DPath, 4.7.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemCamDisplayer",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemCamDisplayer",
+        "defaultResolution": "VisuElemCamDisplayer, 4.7.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemMeter",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemMeter",
+        "defaultResolution": "VisuElemMeter, 4.7.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElems",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElems",
+        "defaultResolution": "VisuElems, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemsAlarm",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemsAlarm",
+        "defaultResolution": "VisuElemsAlarm, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemsDateTime",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemsDateTime",
+        "defaultResolution": "VisuElemsDateTime, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemsSpecialControls",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemsSpecialControls",
+        "defaultResolution": "VisuElemsSpecialControls, 4.7.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemsWinControls",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemsWinControls",
+        "defaultResolution": "VisuElemsWinControls, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemTextEditor",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemTextEditor",
+        "defaultResolution": "VisuElemTextEditor, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemTrace",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemTrace",
+        "defaultResolution": "VisuElemTrace, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuElemXYChart",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuElemXYChart",
+        "defaultResolution": "VisuElemXYChart, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuInputs",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuInputs",
+        "defaultResolution": "VisuInputs, 4.7.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    },
+    {
+      "namespace": "VisuNativeControl",
+      "libraryReference": {
+        "$type": "Placeholder",
+        "placeholder": "System_VisuNativeControl",
+        "defaultResolution": "VisuNativeControl, 4.8.0.0 (System)",
+        "resolverGuid": "2717eb6a-dd07-4c66-8d8d-cacebd7b18ae",
+        "allowUnqualifiedAccess": true
+      }
+    }
+  ]
+}

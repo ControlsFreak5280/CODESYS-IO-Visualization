@@ -1,0 +1,48 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "1294c6bb-939a-49fa-b1ad-6262c45fd0a0",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE Channel_UDT :
+STRUCT
+	ChannelType: IOChannelType;												// The type of IO channel (AI, DI, AO, DO)
+	LoopNumber: WSTRING(80);												// Engineering Loop Number
+	SignalName: WSTRING(256);												// The name of this IO Signal
+	Description: WSTRING(256);												// The Description of this point
+	Units: WSTRING(80);														// The Engineering Units
+
+	ValueRawAnalog: REAL;													// The Raw Analog Value tied to the Analog Input (or Read-back) Item
+	ValueRawAnalogOut: REAL;												// The Raw Analog Value tied to the Analog Output Item
+	ValueRawDigital: BOOL;													// The Raw Digital Value tied to the DI Item
+	ValueRawDigitalOut: BOOL;												// The Raw Digital Value tied to the DO Item
+	
+	InvertValue: BOOL;														// Invert the Input Value
+	CI: BOOL;																// Control Inhibit (Disable propagation)
+	ValueStatus: WORD;														// The status of the channel providing this value
+
+	ZeroRaw: REAL := 4.0;													// The Zero value for the raw data
+	SpanRaw: REAL := 16.0;													// The Span value for the raw data
+	ZeroEu: REAL := 0.0;													// The Zero value for output value
+	SpanEu: REAL := 100.0;													// The Span value for output value
+
+	ValueEu: REAL;															// The Analog Value in Engineering Units
+	ValuePct: REAL;															// Output Value in Percent
+	ValueDig: BOOL;															// Output Value
+
+	StatusCode: DINT;														// Status Code
+	StatusString: WSTRING(256);												// The channel status converted to string
+
+	Invalid: AlarmDigital_UDT := (Enable := TRUE, OnTimer := (PT := 1.0));	// Invalid Value (QB Bit)
+	
+	SimulationEnable: BOOL := TRUE;
+	Simulator: IO_Simulator_UDT;
+END_STRUCT
+END_TYPE

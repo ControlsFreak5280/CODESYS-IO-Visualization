@@ -1,0 +1,23 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "c89fc00c-b68a-4aba-a670-470009efc979",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE DateTimeStamp_UDT :
+STRUCT
+	Year: INT;
+	Month: INT;
+	Day: INT;
+	Hour: INT;
+	Minute: INT;
+	Second: INT;
+END_STRUCT
+END_TYPE

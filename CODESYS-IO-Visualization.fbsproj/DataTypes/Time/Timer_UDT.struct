@@ -1,0 +1,26 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "834d35a9-e74b-4a30-b5fc-43c4ce68008c",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE Timer_UDT :
+STRUCT
+	Timer: TON;
+	In: BOOL;		// Input to Timer
+	Cancel: BOOL;	// Cancels the timer (as if it reaches its end time
+	Reset: BOOL;	// Resets the timer so that it starts over.
+	PT: REAL;		// Timer Time Setpoint in Seconds
+	Q: BOOL;		// Timer Output
+	ET: REAL;		// Timer Elapsed Time
+	RT: REAL;		// Timer Remaining Time
+	On: BOOL;		// The Timer is Running
+END_STRUCT
+END_TYPE

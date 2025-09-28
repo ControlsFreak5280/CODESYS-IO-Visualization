@@ -1,0 +1,28 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "c21f8aa1-948e-40e0-8bfc-60f2729a34c1",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE ValueRamp_UDT :
+STRUCT
+	In: REAL;								// The input value
+	Out: REAL;								// The output value
+	Err: REAL;								// The difference between the input and output values
+	Track: BOOL;							// No ramp, output = input
+	Disable: BOOL;							// Output is not written
+	Status: ValueRampStatus_ENUM;			// 0 = Matched, 1 = Output < Input, 2 = Output > Input
+
+	Rate: REAL := 2.5;						// Units / sec
+	DB: REAL := 0.25;						// Deadband
+
+	CT: CycleTime_UDT;						// Used the calculate the time between each execution
+END_STRUCT
+END_TYPE

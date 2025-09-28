@@ -1,0 +1,24 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "ab4e99cd-2da9-4d72-8a97-99a7de4c1ede",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE Rack_UDT EXTENDS dutPersistObject :
+STRUCT
+	CI: BOOL;							// Control Inhibit
+	Error: BOOL;						// Rack Error
+	InUse: BOOL;						// In Use
+	SlotCount: USINT;					// Number of Slots in Rack
+	IpAddr: WSTRING;					// IP Address
+	Status: DINT;						// Status (0 = all good)
+	StatusString: WSTRING(256);			// Status String
+END_STRUCT
+END_TYPE

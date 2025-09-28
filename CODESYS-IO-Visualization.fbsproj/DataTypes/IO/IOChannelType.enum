@@ -1,0 +1,27 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "d3c68e7f-5126-40fa-946f-10cb0807552c",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE IOChannelType :
+(
+	ctAI,
+	ctDI,
+	ctAO,
+	ctDO,
+	ctAIDI,
+	ctAODI,
+	ctAIHart,
+	ctAOHart
+);
+END_TYPE

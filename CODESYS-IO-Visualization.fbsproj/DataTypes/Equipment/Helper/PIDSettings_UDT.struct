@@ -1,0 +1,38 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "da3bbbd5-35ec-4006-a9ae-c33263dc2ca7",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE PIDSettings_UDT :
+STRUCT
+	Description: WSTRING(256);
+	InUse: BOOL;
+	PV: REAL;
+	SP: REAL;
+	Out: REAL;
+	Error: REAL;
+	Val: REAL;
+	Active: BOOL;
+	
+	PV_LoRange: REAL;
+	PV_HiRange: REAL;
+	Out_LoRange: REAL := 0.0;
+	Out_HiRange: REAL := 100.0;
+	
+	Track: BOOL;
+	Reset: REAL;
+	P: REAL;
+	I: REAL;
+	D: REAL;
+	DB: REAL;
+	DB_Enable: BOOL;
+END_STRUCT
+END_TYPE

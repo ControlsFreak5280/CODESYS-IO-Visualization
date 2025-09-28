@@ -1,0 +1,29 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "decbaab4-9b0c-4398-a1ae-4109b4d43b42",
+    "objectTypeGuid": "ffbfa93a-b94d-45fc-a329-229860183b1d",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+VAR_GLOBAL
+	CPU: CodeSysCPU_UDT := (
+		Name := "Example CODESYS PLC",
+		Description := "Example OOP with Visualization",
+		IPAddress_A := "192.168.160.13",
+		IPAddress_B := "192.168.0.1",
+		CPUType := "Raspberry Pi",
+		SlotCount := 8
+	);
+
+	ClockLocal: PLCClock_UDT;
+	ClockUTC: PLCClock_UDT;
+
+	SimulationRunning: BOOL;
+END_VAR
+

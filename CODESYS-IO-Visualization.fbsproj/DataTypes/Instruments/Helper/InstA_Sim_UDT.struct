@@ -1,0 +1,27 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "62a1aa31-44c1-40f9-b970-d9b70d19e349",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE InstA_Sim_UDT :
+STRUCT
+	RawVal: REAL;
+	StatusCode: DINT;
+	SimDisable: BOOL;
+	NoisePct: REAL := 0.1;
+	CommsOK: BOOL;
+	WarningOK: BOOL;
+	ChangeRate: REAL := 5.0;
+	Accum0_Total: REAL;
+	Accum1_Total: REAL;
+	Accum2_Total: REAL;
+END_STRUCT
+END_TYPE

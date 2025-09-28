@@ -1,0 +1,21 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "ab32e4a8-1d22-4266-bdb2-3f1b24ac84c2",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE InstD_Sim_UDT :
+STRUCT
+	RawVal: BOOL;
+	StatusCode: DINT;
+	SimDisable: BOOL;
+	CommsOK: BOOL;
+END_STRUCT
+END_TYPE

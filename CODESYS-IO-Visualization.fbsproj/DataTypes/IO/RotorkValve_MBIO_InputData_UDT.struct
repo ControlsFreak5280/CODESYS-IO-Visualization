@@ -1,0 +1,26 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "467be5ce-0363-4f66-8695-b5cc6acd3310",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE RotorkValve_MBIO_InputData_UDT :
+STRUCT
+	Reg00: WORD;	// Digital Values
+	Reg01: WORD;	// Digital Values
+	Reg02: WORD;	// Actuator Torque (x1)
+	Reg03: WORD;	// Valve Position (x10)
+	Reg04: WORD;	// Analog Input (x10)
+
+	State: UINT;
+	Error: BOOL;
+	ErrorCode: INT;
+END_STRUCT
+END_TYPE

@@ -1,0 +1,48 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "07fac12d-5178-4740-89b4-c8ce46d8e2d1",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE RotorkValve_Simulator_UDT EXTENDS ValveSimulator_UDT :
+STRUCT
+	InputData: RotorkValve_MBIO_InputData_UDT;
+	OutputData: RotorkValve_MBIO_OutputData_UDT;
+	
+	// Manual Data
+	Thermostat_Tripped: BOOL;
+	Monitor_Relay: BOOL;
+	Valve_Obstructed: BOOL;
+	Valve_Jammed: BOOL;
+	Valve_Moving_By_Hand: BOOL;
+	Moving_Inhibited_by_MIT: BOOL;
+	Postion_Control_Enabled: BOOL;
+	EEPROM_Checksum_Failure: BOOL;
+	
+	Battery_Low: BOOL;
+	Open_Interlock_Active: BOOL;
+	Close_Interlock_Active: BOOL;
+	DI_1: BOOL;
+	DI_2: BOOL;
+	DI_3: BOOL;
+	DI_4: BOOL;
+	Reserved_7: BOOL;
+	Reserved_8: BOOL;
+	Reserved_9: BOOL;
+	Control_Contention: BOOL;
+	Partial_Stroke_Test_in_Progress: BOOL;
+	Partial_Stroke_Test_Error: BOOL;
+	General_Alarm: BOOL;
+	Reserved_14: BOOL;
+	Reserved_15: BOOL;
+	
+	Analog_Input: REAL;
+END_STRUCT
+END_TYPE

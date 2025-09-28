@@ -1,0 +1,34 @@
+__V3_META__
+{
+  "objectGuid": "fbb3bf99-fa86-464d-9287-661073a981bc",
+  "objectTypeGuid": "bb0b9044-714e-4614-ad3e-33cbdf34d16b",
+  "embeddedObjectTypeGuids": [],
+  "properties": {},
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{bb0b9044-714e-4614-ad3e-33cbdf34d16b}" Method="IArchivable">
+  <Single Name="UniqueIdGenerator" Type="string">8</Single>
+  <List Name="BitmapPool" Type="System.Collections.ArrayList">
+    <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+      <Single Name="BitmapID" Type="string">DownArrow_Gray</Single>
+      <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|E:\Dropbox\RSI\PLC\Program\CODESYS\Images\DownArrow_Gray.png</Single>
+      <Single Name="ItemID" Type="int">6</Single>
+    </Single>
+    <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+      <Single Name="BitmapID" Type="string">UpArrow_Gray</Single>
+      <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|E:\Dropbox\RSI\PLC\Program\CODESYS\Images\UpArrow_Gray.png</Single>
+      <Single Name="ItemID" Type="int">7</Single>
+    </Single>
+    <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+      <Single Name="BitmapID" Type="string"></Single>
+      <Single Name="FileID" Type="string"></Single>
+      <Single Name="ItemID" Type="int">8</Single>
+    </Single>
+  </List>
+  <Single Name="GuidInit" Type="System.Guid">e7cd2a57-0a04-4b64-ac5f-974643b3297e</Single>
+  <Single Name="GuidReInit" Type="System.Guid">19e608e4-a50b-47db-aca1-8d8825b0af62</Single>
+  <Single Name="GuidExitX" Type="System.Guid">6bbfd0e5-64c2-4cf3-8a80-9bb75eeefbd9</Single>
+  <Single Name="ValidIds" Type="bool">True</Single>
+</Single>

@@ -1,0 +1,44 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "73ce68ae-ccfe-43bd-a85e-5396c19f2d88",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE InstD_UDT EXTENDS dutPersistObject :
+STRUCT
+	TagNo: WSTRING(80);					//The Engineering Tag Name for this equipment
+	TagDesc: WSTRING(256);				//Input: A Description for this Value
+
+	RawVal: BOOL;						//Input: The Raw Value
+	RawValStatusCode: DINT;				//Input: The Raw Value Status Code
+	ManualValue: BOOL;					//Input: The manual value, when in manual
+	Mode: INT;							//Input: 0 = Online (read Raw Value), 1 = Manual (use Manual Value)
+	FailAction: INT;					//Input: 0 = Fail Value, 1 = Hold, 2 = Raw Value
+	FailValue: BOOL;					//Input: The Fail Value
+
+	MaxSeverity: INT;					//Output: The highest severity setting for all alarms
+	AlarmLevel: INT;					//Output: The worst alarm level for all alarms.  Zero when no alarms active
+
+	CurVal: BOOL;						//Output: Output Value
+	StatusCode: DINT;					//Output: Output Status Code
+	GlobalStatusCode: DINT;				//Output: Output Status Code
+	GlobalStatusString: WSTRING(256) := "OK";	//Output: A Description for the status code
+
+	DeviceFail: AlarmDigital_UDT := (Enable := TRUE, OnTimer := (PT := 30.0));		//Output: Invalid Value (QB Bit)
+	DeviceWarning: AlarmDigital_UDT := (Enable := TRUE, OnTimer := (PT := 30.0));	//Output: Invalid Value (QB Bit)
+	Process: AlarmDigital_UDT := (Enable := TRUE, OnTimer := (PT := 0.0));			//Output: This Value in Alarm
+	OOS: AlarmDigital_UDT := (Enable := TRUE, OnTimer := (PT := 30.0));				//Output: Device Out of Service
+
+	Sim: InstD_Sim_UDT;
+	
+	TempVal: BOOL;
+	FrameIndex: INT;				//Internal: Used in Visualization
+END_STRUCT
+END_TYPE

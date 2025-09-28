@@ -1,0 +1,28 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "b290b89d-d14f-4fad-9b27-1c6d03eda0c5",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE Module_UDT :
+STRUCT
+	IO: ARRAY[0..Lib_GVL.MaxPointCount] OF RawIO_UDT;								// Raw IO in/out from hardware
+	Channels: ARRAY[0..Lib_GVL.MaxPointCount] OF Channel_UDT;						// Channel data to use in the project
+	ChannelCount: USINT := 0;														// Number of channels on this module
+	CI: BOOL;																		// Control Inhibit
+	InUse: BOOL := FALSE;															// In Use
+	SlotNumber: USINT;																// Slot Number
+	ModuleType: WSTRING(20) := "NA";												// Module Type (AI, AO, DI, DO, UIO)
+	Status: DINT;																	// Status
+	StatusString: WSTRING(256);														// Status String
+	Failed: AlarmDigital_UDT := (Enable := TRUE, OnTimer := (PT := 30.0));			// Module Failed
+	SimulationEnable: BOOL := TRUE;													// Used for data simulation
+END_STRUCT
+END_TYPE

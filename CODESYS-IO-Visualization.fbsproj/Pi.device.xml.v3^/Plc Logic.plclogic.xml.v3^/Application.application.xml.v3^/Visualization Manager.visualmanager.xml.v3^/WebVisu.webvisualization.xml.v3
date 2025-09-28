@@ -1,0 +1,33 @@
+__V3_META__
+{
+  "objectGuid": "406ff846-231d-41ea-9728-f1d845dc4aeb",
+  "objectTypeGuid": "0fdbf158-1ae0-47d9-9269-cd84be308e9d",
+  "embeddedObjectTypeGuids": [],
+  "properties": {},
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{0fdbf158-1ae0-47d9-9269-cd84be308e9d}" Method="IArchivable">
+  <Single Name="ViewSettings" Type="{00207769-37aa-45a4-ae43-8435c5f1880b}" Method="IArchivable">
+    <Single Name="StartVisu" Type="string">Visualization</Single>
+    <Single Name="HtmFileName" Type="string">webvisu</Single>
+    <Single Name="MainStartHtm" Type="bool">True</Single>
+    <Single Name="UpdateRate" Type="int">200</Single>
+    <Single Name="CommBufferSize" Type="int">50000</Single>
+    <Single Name="BestFit" Type="bool">True</Single>
+    <Single Name="ClientSizeMode" Type="{c37fe731-4f69-4d98-82fe-4f9aefbe200d}">AutoDetect</Single>
+    <Single Name="ClientSizeX" Type="int">1280</Single>
+    <Single Name="ClientSizeY" Type="int">1024</Single>
+    <Single Name="ForceWebVisuClient" Type="bool">False</Single>
+    <Single Name="Antialiasing" Type="bool">True</Single>
+    <Single Name="ClientOperationType" Type="{bd122c9a-5824-461f-8b56-d89816d314bf}">Touchscreen</Single>
+    <Single Name="ScaleTypeIsotropic" Type="bool">False</Single>
+    <Single Name="UseScalingOptionsForDialogs" Type="bool">True</Single>
+    <Single Name="HandleTouchEvents" Type="bool">True</Single>
+    <Single Name="LoginVisu" Type="string"></Single>
+    <Single Name="FillBackground" Type="bool">True</Single>
+    <Single Name="UseBrowserLanguage" Type="bool">True</Single>
+    <Single Name="ClientSizeModeNew" Type="{c37fe731-4f69-4d98-82fe-4f9aefbe200d}">Specified</Single>
+  </Single>
+</Single>

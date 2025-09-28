@@ -1,0 +1,30 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "e0626dbd-f75f-41bf-9ce6-fd80def0a78f",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE PLCClock_UDT :
+STRUCT
+	PLCTime: DT;
+	PLCTimeULINT: ULINT;
+	PLCTimeRTS: RTS_SYSTIMEDATE;
+	PLCTimeString: WSTRING(80);
+	Year: INT;
+	Month: INT;
+	Day: INT;
+	Hour: INT;
+	Minute: INT;
+	Second: INT;
+	DayOfWeek: INT;
+	DayOfYear: INT;
+	SecondsSinceMidnight: DINT;
+END_STRUCT
+END_TYPE

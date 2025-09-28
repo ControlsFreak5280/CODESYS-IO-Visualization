@@ -1,0 +1,75 @@
+__METADATA__
+{
+  "v3Meta": {
+    "objectGuid": "0af5dcdf-cd88-4953-b247-c9d5f003742a",
+    "objectTypeGuid": "2db5746d-d284-4425-9f7f-2663a34b0ebc",
+    "embeddedObjectTypeGuids": [
+      "a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+    ],
+    "properties": {},
+    "subObjects": {}
+  }
+}
+__DECLARATION__
+TYPE Equip_UDT EXTENDS dutPersistObject :
+STRUCT
+	Processor: WSTRING(80);
+	TagNo: WSTRING(80);					//The Engineering Tag Name for this equipment
+	TagDesc: WSTRING(256);				//Input: A Description for this Value
+
+	Failure: ARRAY [0..9] OF AlarmDigital_UDT;
+	Interlock: ARRAY [0..9] OF AlarmDigital_UDT;
+	NotReady: ARRAY [0..9] OF AlarmDigital_UDT;
+	Warning: ARRAY [0..9] OF AlarmDigital_UDT;
+	
+	InterlockActive: BOOL;
+	FailureActive: BOOL;
+	NotReadyActive: BOOL;
+	WarningActive: BOOL;
+	TimerActive: BOOL;
+	
+	OOS: AlarmDigital_UDT := (Enable := TRUE, OnTimer := (PT := 30.0));				//Output: Device Out of Service
+	Stats: Equip_Statistics_UDT;
+
+	Raw: DataGroup_UDT;
+	HMI: DataGroup_UDT;
+	PLC: DataGroup_UDT;
+	Sim: DataGroup_UDT;
+
+	String0: ARRAY [0..2] OF WSTRING(256);
+	Timer0: ARRAY [0..9] OF Timer_UDT;
+
+	SpeedRamp: OSCAT_BASIC.SRAMP;  					// Ramp Function Block used to ramp speed setpoint
+	PID: PID_DB_OSCAT; 									// PID Control for use by the Equipment
+	PIDSettings1: PIDSettings_UDT;					// PID Settings Option 1
+	PIDSettings2: PIDSettings_UDT;					// PID Settings Option 2
+
+	DiagnosticMode: BOOL;
+	Remote: BOOL;
+	Auto: BOOL;
+	Closed: BOOL := TRUE;
+	Traveling: BOOL;
+	Opened: BOOL;
+	Running: BOOL;
+	Speed: REAL;
+	Position: REAL;
+
+	CloseCmd: BOOL;
+	OpenCmd: BOOL;
+	RunCmd: BOOL;
+	SpeedCmd: REAL;
+	PositionCmd: REAL;
+	
+	MaxSeverity: INT;					//Output: The highest severity setting for all alarms
+	AlarmLevel: INT;					//Output: The worst alarm level for all alarms.  Zero when no alarms active
+	
+	ResetTimer: Timer_UDT := (PT := 5.0);
+	
+	DiagnosticCode: DINT;
+	StatusCode: DINT;
+	GlobalStatusCode: DINT;
+	GlobalStatusString: WSTRING(256) := "OK";	//Output: A Description for the status code
+
+	FrameIndex: INT;				//Internal: Used in Visualization
+END_STRUCT
+END_TYPE
