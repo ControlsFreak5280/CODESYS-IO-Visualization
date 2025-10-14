@@ -146,7 +146,7 @@ __V3_CONTENT__
                   <Single Name="Default" Type="string">Communication Timeout (ms)</Single>
                 </Single>
                 <Single Name="Identifier" Type="string">9102</Single>
-                <Single Name="Value" Type="string">1000</Single>
+                <Single Name="Value" Type="string">2500</Single>
                 <Single Name="Type" Type="string">DWORD</Single>
                 <Single Name="Default" Type="string">1000</Single>
               </Single>

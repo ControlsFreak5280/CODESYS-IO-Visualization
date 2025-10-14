@@ -26,7 +26,7 @@ __V3_CONTENT__
     <Single Name="Sensitivity" Type="string">1</Single>
   </Single>
   <Single Name="Interval" Type="{68e48988-4399-454b-ae43-e500b779c242}" Method="IArchivable">
-    <Single Name="Time" Type="string">20</Single>
+    <Single Name="Time" Type="string">100</Single>
     <Single Name="Unit" Type="string">ms</Single>
   </Single>
   <Single Name="Event" Type="string"></Single>

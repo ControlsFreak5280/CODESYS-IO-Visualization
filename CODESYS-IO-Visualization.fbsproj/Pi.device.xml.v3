@@ -951,7 +951,7 @@ __V3_CONTENT__
     </List>
     <Null Name="RequiredTasks" />
     <Single Name="NeedsBusCycle" Type="bool">False</Single>
-    <Single Name="BusCycleTask" Type="string">&lt;unspecified&gt;</Single>
+    <Single Name="BusCycleTask" Type="string">MainTask</Single>
     <Single Name="IoApp" Type="System.Guid">4ce97f06-2b3e-4644-8b94-7c301227cf4b</Single>
     <Single Name="IoAppSet" Type="bool">True</Single>
     <Array Name="PositionIds" Type="long">HxAAAAAAAAAgEAAAAAAAACEQAAAAAAAA</Array>
@@ -971,7 +971,7 @@ __V3_CONTENT__
     <Single Name="UpdateIOsInStop" Type="bool">False</Single>
     <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
     <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
-    <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Single Name="BusCycleTaskGuid" Type="System.Guid">af241266-fe37-48f8-b639-bfd487be039e</Single>
     <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
     <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
   </Single>
